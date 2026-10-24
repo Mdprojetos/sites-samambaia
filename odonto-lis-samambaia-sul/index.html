@@ -32,6 +32,7 @@
     <li><a href="#como">Como marcar</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#aniversario">Aniversário</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
   <a class="btn btn-primary" href="https://wa.me/5561981018199?text=Ol%C3%A1%2C%20Odonto%20Lis%21%20Gostaria%20de%20marcar%20uma%20consulta." target="_blank" rel="noopener">Marcar pelo WhatsApp</a>
@@ -120,6 +121,49 @@
   </div>
 </section>
 
+<section class="bday" id="aniversario">
+  <div class="wrap">
+    <div class="bday-box">
+      <div class="bday-text" data-up>
+        <span class="tag"><svg class="ic"><use href="icons.svg#i-gift"/></svg>Clube de aniversário</span>
+        <h2>Seu aniversário merece uma <i>atenção especial</i>.</h2>
+        <p>Cadastre-se e, no dia do seu aniversário, receba uma mensagem especial de Odonto Lis no seu WhatsApp, com uma possível condição especial para comemorar. As condições são definidas pelo próprio consultório.</p>
+        <ul class="perks">
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg>Mensagem especial no dia do seu aniversário</li>
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg>Possível condição especial, conforme as regras de Odonto Lis</li>
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg>Sem spam: só uma mensagem por ano</li>
+        </ul>
+      </div>
+      <div data-up>
+        <!-- Clube de aniversário: desativado na prévia (data-url vazio). Para ativar, o negócio segue aniversarios/COMO-CONFIGURAR.md e envia a URL /exec, que entra em data-url. -->
+        <form class="bday-form" id="bdayForm" method="post" action="#aniversario" novalidate data-url="" data-off="Nesta prévia o cadastro ainda não está ativo. Fale com Odonto Lis pelo WhatsApp (61) 98101-8199." data-ok="Cadastro feito! No seu aniversário você vai receber uma mensagem de Odonto Lis no WhatsApp." data-fail="Não foi possível enviar agora. Tente de novo em instantes ou chame Odonto Lis no WhatsApp (61) 98101-8199." data-btn="Quero participar">
+          <div class="field">
+            <label for="bNome">Nome</label>
+            <input id="bNome" type="text" autocomplete="name" placeholder="Como você gostaria de ser chamada(o)" maxlength="80" required aria-describedby="bNomeErr">
+            <span class="err" id="bNomeErr">Digite o seu nome.</span>
+          </div>
+          <div class="two">
+            <div class="field">
+              <label for="bTel">WhatsApp</label>
+              <input id="bTel" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="(61) 90000-0000" maxlength="15" required aria-describedby="bTelErr">
+              <span class="err" id="bTelErr">Digite um telefone com DDD.</span>
+            </div>
+            <div class="field">
+              <label for="bNasc">Data de nascimento</label>
+              <input id="bNasc" type="text" inputmode="numeric" autocomplete="bday" placeholder="dd/mm/aaaa" maxlength="10" required aria-describedby="bNascErr">
+              <span class="err" id="bNascErr">Digite uma data válida.</span>
+            </div>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="bSite">Não preencha</label><input id="bSite" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+          <label class="consent" id="bConsentWrap"><input id="bConsent" type="checkbox" required><span>Autorizo Odonto Lis a guardar meus dados e me enviar uma mensagem no WhatsApp no meu aniversário. Posso pedir a exclusão a qualquer momento. Veja a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
+          <p class="form-msg" id="bMsg" role="alert"></p>
+          <button class="btn btn-primary" type="submit" id="bBtn"><svg class="ic"><use href="icons.svg#i-gift"/></svg>Quero participar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="contato">
   <div class="wrap">
     <div class="cta-box" data-up>
@@ -166,7 +210,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Configuração da prévia: GA_ID = '' e BDAY_URL = '' (em site.js) -->
+<!-- Configuração da prévia: GA_ID = '' (em site.js); clube de aniversário: data-url do formulário vazio -->
 <script type="application/json" id="cfg">{"hours": {"1": [480, 1080], "2": [480, 1080], "3": [480, 1080], "4": [480, 1080], "5": [480, 1080]}, "mapSrc": "https://www.google.com/maps?q=Odonto%20Lis%20-%20Samambaia%20Sul%2C%20Qs%20106%20-%20Cjto%207%2C%20Av.%201%20Sul%2C%20Lote%201%20-%20Sala%20102%20-%20Samambaia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072302-517&output=embed", "mapTitle": "Mapa com a localização de Odonto Lis"}</script>
 <script src="site.js"></script>
 </body>

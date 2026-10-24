@@ -5,8 +5,7 @@
 
   // Google Analytics: desligado nesta prévia
   const GA_ID = ''; // Analytics desligado na prévia
-  // Clube de aniversário: não incluído nesta prévia
-  const BDAY_URL = ''; // clube de aniversário fora da prévia
+  // Clube de aniversário: a URL /exec fica no data-url do formulário (vazia na prévia = nada é enviado)
 
   // aberto agora? (horário de Brasília) — horários do perfil do Google Maps
   const HOURS = JSON.parse(document.getElementById('cfg').textContent).hours;
@@ -44,6 +43,59 @@
     f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade'; f.allowFullscreen = true;
     box.classList.add('loaded'); box.replaceChildren(f);
   });
+
+  // clube de aniversário: na prévia, BDAY_URL fica vazia e nada é enviado (o negócio ativa depois, ver aniversarios/COMO-CONFIGURAR.md)
+  const form = document.getElementById('bdayForm');
+  if (form) {
+    const BDAY_URL = form.dataset.url || '';
+    const fNome = document.getElementById('bNome'), fTel = document.getElementById('bTel'), fNasc = document.getElementById('bNasc');
+    const fConsent = document.getElementById('bConsent'), fMsg = document.getElementById('bMsg'), fBtn = document.getElementById('bBtn');
+    fTel.addEventListener('input', () => {
+      const d = fTel.value.replace(/\D/g, '').slice(0, 11);
+      fTel.value = d.length > 6 ? `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0, 2)}) ${d.slice(2)}` : d;
+    });
+    fNasc.addEventListener('input', () => {
+      const d = fNasc.value.replace(/\D/g, '').slice(0, 8);
+      fNasc.value = [d.slice(0, 2), d.slice(2, 4), d.slice(4)].filter(Boolean).join('/');
+    });
+    const validDate = v => {
+      const m = v.match(/^(\d{2})\/(\d{2})\/(\d{4})$/); if (!m) return false;
+      const dt = new Date(+m[3], m[2] - 1, +m[1]);
+      return dt.getDate() === +m[1] && dt.getMonth() === m[2] - 1 && +m[3] >= 1900 && dt <= new Date();
+    };
+    const checks = [
+      [fNome, () => fNome.value.trim().length >= 2],
+      [fTel, () => /^\d{10,11}$/.test(fTel.value.replace(/\D/g, ''))],
+      [fNasc, () => validDate(fNasc.value)]
+    ];
+    checks.forEach(([el, ok]) => el.addEventListener('blur', () => { if (el.value) el.setAttribute('aria-invalid', !ok()); }));
+    checks.forEach(([el, ok]) => el.addEventListener('input', () => { if (el.getAttribute('aria-invalid') === 'true' && ok()) el.setAttribute('aria-invalid', 'false'); }));
+    fConsent.addEventListener('change', () => document.getElementById('bConsentWrap').classList.toggle('invalid', !fConsent.checked));
+    form.addEventListener('submit', async ev => {
+      ev.preventDefault();
+      fMsg.textContent = ''; fMsg.classList.remove('is-note');
+      const bad = checks.filter(([el, ok]) => { el.setAttribute('aria-invalid', !ok()); return !ok(); });
+      document.getElementById('bConsentWrap').classList.toggle('invalid', !fConsent.checked);
+      if (bad.length) { bad[0][0].focus(); return; }
+      if (!fConsent.checked) { fMsg.textContent = 'Marque a autorização para concluir o cadastro.'; fConsent.focus(); return; }
+      if (!BDAY_URL) { fMsg.classList.add('is-note'); fMsg.textContent = form.dataset.off; return; }
+      fBtn.disabled = true; fBtn.lastChild.textContent = 'Enviando…';
+      try {
+        const res = await fetch(BDAY_URL, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify({
+          nome:fNome.value.trim(), telefone:fTel.value, nascimento:fNasc.value, consentimento:fConsent.checked, site:document.getElementById('bSite').value
+        })});
+        const out = await res.json();
+        if (!out.ok) throw new Error(out.erro || 'falha');
+        const first = fNome.value.trim().split(/\s+/)[0];
+        form.innerHTML = '<div class="bday-done"><span class="ic-wrap"><svg class="ic" style="width:30px;height:30px"><use href="icons.svg#i-gift"/></svg></span><h3></h3><p></p></div>';
+        form.querySelector('h3').textContent = `Prontinho, ${first}!`;
+        form.querySelector('p').textContent = form.dataset.ok;
+      } catch (err) {
+        fMsg.textContent = form.dataset.fail;
+        fBtn.disabled = false; fBtn.lastChild.textContent = form.dataset.btn;
+      }
+    });
+  }
 
   if (fine) document.querySelectorAll('.step').forEach(c => c.addEventListener('pointermove', e => {
     const r = c.getBoundingClientRect();
