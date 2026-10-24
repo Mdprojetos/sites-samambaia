@@ -1,0 +1,138 @@
+# Copia as prévias publicadas na Vercel (projetos "previa-*") para pastas deste repositório.
+# Roda sozinho 2x por dia e também pode ser rodado na mão (aba Actions → "Run workflow").
+# Precisa do segredo VERCEL_TOKEN (Settings → Secrets and variables → Actions).
+name: Sincronizar prévias da Vercel
+
+on:
+  schedule:
+    - cron: "17 13 * * *"   # 10h17 em Brasília
+    - cron: "47 23 * * *"   # 20h47 em Brasília
+  workflow_dispatch:
+    inputs:
+      atualizar:
+        description: "Atualizar também pastas que já existem? (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sincronizar-previas
+  cancel-in-progress: false
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Baixar prévias da Vercel e criar um commit por site
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_TEAM_ID: team_4BFWPLnpZQLNXHo7i3wcAKve
+          ATUALIZAR: ${{ github.event.inputs.atualizar || 'false' }}
+        run: |
+          cat > /tmp/sync.mjs <<'EOF'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import { execFileSync } from 'node:child_process';
+
+          const TOKEN = process.env.VERCEL_TOKEN;
+          const TEAM = process.env.VERCEL_TEAM_ID;
+          const ATUALIZAR = String(process.env.ATUALIZAR).toLowerCase() === 'true';
+          const API = process.env.VERCEL_API || 'https://api.vercel.com';
+          if (!TOKEN) { console.error('Falta o segredo VERCEL_TOKEN.'); process.exit(1); }
+
+          const q = (p, params = {}) => {
+            const u = new URL(API + p);
+            u.searchParams.set('teamId', TEAM);
+            for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
+            return u;
+          };
+          async function api(p, params, raw = false) {
+            for (let tentativa = 1; tentativa <= 3; tentativa++) {
+              const r = await fetch(q(p, params), { headers: { Authorization: `Bearer ${TOKEN}` } });
+              if (r.status === 429 || r.status >= 500) { await new Promise(s => setTimeout(s, 2000 * tentativa)); continue; }
+              if (!r.ok) throw new Error(`${r.status} em ${p}: ${(await r.text()).slice(0, 200)}`);
+              return raw ? r : r.json();
+            }
+            throw new Error(`Falhou 3 vezes: ${p}`);
+          }
+          const git = (...a) => execFileSync('git', a, { encoding: 'utf8' }).trim();
+
+          // 1) projetos cujo nome começa com "previa-" (os sites de clientes reais não são tocados)
+          const projetos = [];
+          let until;
+          do {
+            const params = { search: 'previa-', limit: '100' };
+            if (until) params.until = String(until);
+            const j = await api('/v10/projects', params);
+            projetos.push(...(j.projects || []).filter(p => p.name.startsWith('previa-')));
+            until = j.pagination && j.pagination.next;
+          } while (until);
+          console.log(`Projetos de prévia encontrados: ${projetos.length}`);
+
+          // 2) percorre a árvore de arquivos da publicação
+          function listar(nos, base = '') {
+            const out = [];
+            for (const n of nos || []) {
+              const p = base ? `${base}/${n.name}` : n.name;
+              if (n.type === 'directory') out.push(...listar(n.children, p));
+              else if (n.type === 'file') out.push({ path: p, uid: n.uid });
+            }
+            return out;
+          }
+          async function conteudo(dep, uid) {
+            const r = await api(`/v8/deployments/${dep}/files/${uid}`, {}, true);
+            const tipo = r.headers.get('content-type') || '';
+            const buf = Buffer.from(await r.arrayBuffer());
+            if (tipo.includes('application/json')) {
+              try { const j = JSON.parse(buf.toString('utf8')); if (j && typeof j.data === 'string') return Buffer.from(j.data, 'base64'); } catch {}
+            }
+            return buf;
+          }
+          const seguro = p => !p.split('/').some(s => s === '..' || s === '' || s === '.git') && !p.startsWith('.github');
+
+          let novos = 0, atualizados = 0, pulados = 0;
+          for (const proj of projetos.sort((a, b) => a.name.localeCompare(b.name))) {
+            const pasta = proj.name.replace(/^previa-/, '');
+            if (!/^[a-z0-9-]+$/.test(pasta)) { console.log(`- ${proj.name}: nome fora do padrão, pulado`); pulados++; continue; }
+            const existe = fs.existsSync(pasta);
+            if (existe && !ATUALIZAR) { pulados++; continue; }
+
+            const deps = await api('/v6/deployments', { projectId: proj.id, target: 'production', state: 'READY', limit: '1' });
+            const dep = deps.deployments && deps.deployments[0];
+            if (!dep) { console.log(`- ${proj.name}: sem publicação pronta, pulado`); pulados++; continue; }
+
+            const arvore = await api(`/v6/deployments/${dep.uid}/files`);
+            let arquivos = listar(Array.isArray(arvore) ? arvore : arvore.files);
+            // as publicações feitas por arquivo ficam dentro de "src/"
+            if (arquivos.length && arquivos.every(f => f.path.startsWith('src/'))) arquivos = arquivos.map(f => ({ ...f, path: f.path.slice(4) }));
+            arquivos = arquivos.filter(f => seguro(f.path));
+            if (!arquivos.some(f => f.path === 'index.html')) { console.log(`- ${proj.name}: sem index.html, pulado`); pulados++; continue; }
+
+            for (const f of arquivos) {
+              const destino = path.join(pasta, f.path);
+              fs.mkdirSync(path.dirname(destino), { recursive: true });
+              fs.writeFileSync(destino, await conteudo(dep.uid, f.uid));
+            }
+
+            git('add', '--', pasta);
+            if (!git('status', '--porcelain', '--', pasta)) { console.log(`- ${pasta}: sem mudanças`); continue; }
+            const html = fs.readFileSync(path.join(pasta, 'index.html'), 'utf8');
+            const titulo = ((html.match(/<title>([^<]*)<\/title>/) || [])[1] || pasta).split(' · ')[0].replace(/\s*\(prévia\)\s*$/, '').trim();
+            git('commit', '-m', `${existe ? 'Atualiza' : 'Adiciona'} prévia do site de ${titulo}`, '--', pasta);
+            console.log(`+ ${pasta}: ${existe ? 'atualizado' : 'adicionado'} (${arquivos.length} arquivos)`);
+            existe ? atualizados++ : novos++;
+          }
+          console.log(`Resumo: ${novos} novos, ${atualizados} atualizados, ${pulados} pulados.`);
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node /tmp/sync.mjs
+          git push
