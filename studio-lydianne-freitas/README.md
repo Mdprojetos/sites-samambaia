@@ -20,9 +20,13 @@ Todos os espaços de foto usam ilustrações neutras. As fotos reais devem ser e
 - `img/sobre.jpg` (espaço ou equipe)
 - `img/trabalho-1.jpg` a `img/trabalho-10.jpg` (galeria)
 
+## Clube de aniversário
+Desativado na prévia (`data-url` vazio no formulário): nada é enviado nem guardado. Para ativar, o negócio segue `aniversarios/COMO-CONFIGURAR.md`, define desconto/condição e validade e envia a URL `/exec`.
+
 ## O que faltou
 - fotos reais (img/hero.jpg, img/sobre.jpg, img/trabalho-1.jpg a img/trabalho-10.jpg)
 - lista de serviços/procedimentos
 - texto "Sobre" (história, equipe)
 - CNPJ (política de privacidade)
 - confirmar que o telefone atende WhatsApp
+- desconto/condição e validade do clube de aniversário (o negócio define)
