@@ -1,0 +1,14 @@
+Fotos desta prévia
+==================
+
+Os espaços de foto do site usam ilustrações neutras. Para colocar as fotos reais
+(enviadas pelo próprio negócio, nunca copiadas do Google ou do Instagram), salve
+nesta pasta com estes nomes e troque o bloco indicado no index.html (procure por "FOTO:"):
+
+- img/hero.jpg        foto principal do topo (vertical, 4:5)
+- img/sobre.jpg       profissional/equipe ou recepção (vertical, 3:4)
+- img/trabalho-1.jpg  galeria "Conheça o espaço" (3:4)
+- img/trabalho-2.jpg  galeria (3:4)
+- img/trabalho-3.jpg  galeria (3:4)
+
+Dica: use JPG ou WebP com no máximo ~300 KB cada.
