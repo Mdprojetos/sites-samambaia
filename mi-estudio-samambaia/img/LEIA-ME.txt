@@ -1,0 +1,14 @@
+Fotos de Mi estúdio
+==============================
+
+Esta prévia NÃO usa nenhuma foto do Google, do Instagram ou de outra rede do negócio.
+Os espaços de foto do site mostram ilustrações neutras (gradientes e ícones).
+
+Quando o Mi estúdio enviar as próprias fotos, salve nesta pasta com estes nomes
+e troque o bloco <div class="ph"> indicado pelo comentário "FOTO:" no index.html:
+
+- img/hero.jpg          foto principal do topo (vertical, 4:5, ~1200 px de altura)
+- img/sobre.jpg         foto do espaço ou da equipe na seção "Sobre" (vertical, 4:5)
+- img/trabalho-1.jpg … img/trabalho-10.jpg   fotos da galeria (vertical, 3:4, ~800 px)
+
+Dica: prefira .jpg ou .webp com até 300 KB cada.
