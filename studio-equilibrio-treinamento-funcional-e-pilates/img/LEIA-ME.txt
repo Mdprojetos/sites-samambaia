@@ -1,0 +1,15 @@
+FOTOS DO SITE (prévia)
+
+Esta prévia usa só imagens ilustrativas (gradientes e ícones). Nenhuma foto foi copiada do Google, do Instagram ou de outra rede.
+As fotos reais devem ser enviadas pelo próprio negócio. Salve-as nesta pasta com estes nomes:
+
+  img/hero.jpg          foto principal (topo da página), vertical 4:5
+  img/sobre.jpg         foto da equipe/profissional ou do espaço, vertical 3:4
+  img/espaco-1.jpg      foto do espaço, quadrada
+  img/espaco-2.jpg      foto do espaço, quadrada
+  img/trabalho-1.jpg ... img/trabalho-10.jpg   fotos de trabalhos/atendimentos, verticais 3:4
+
+No index.html, cada espaço tem um comentário <!-- img/... --> indicando qual arquivo entra ali.
+Troque o <div class="ph">...</div> por <img src="img/NOME.jpg" alt="descrição da foto">
+(mantendo id="heroImg" e id="portraitImg" nas duas primeiras).
+Use fotos leves (até ~300 KB, de preferência .webp ou .jpg).
