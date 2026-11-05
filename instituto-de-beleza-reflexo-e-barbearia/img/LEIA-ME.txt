@@ -1,0 +1,20 @@
+Fotos da prévia de Instituto de Beleza Reflexo e Barbearia
+==========================================
+
+Nesta prévia, todos os espaços de foto usam ilustrações neutras (gradientes e ícones).
+Nenhuma foto do Google, Instagram ou de outra rede foi copiada.
+As fotos reais devem ser enviadas pelo próprio negócio e salvas nesta pasta com estes nomes:
+
+img/hero.jpg         foto principal do topo (vertical, 4:5, ~1200x1500 px)
+img/sobre.jpg        foto do espaço ou da profissional/equipe (vertical, 3:4)
+img/trabalho-1.jpg   galeria de trabalhos (vertical, 3:4, ~600x800 px)
+img/trabalho-2.jpg
+img/trabalho-3.jpg
+img/trabalho-4.jpg
+img/trabalho-5.jpg
+img/trabalho-6.jpg
+img/trabalho-7.jpg
+img/trabalho-8.jpg
+
+No index.html, cada espaço tem um comentário <!-- foto: img/... --> indicando qual arquivo entra.
+Troque o <div class="ph" ...> por <img src="img/NOME.jpg" alt="descrição da foto"> (com loading="lazy" na galeria).
