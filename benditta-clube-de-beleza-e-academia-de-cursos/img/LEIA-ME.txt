@@ -1,0 +1,19 @@
+Fotos de Benditta – Clube de Beleza e Academia de Cursos
+=====================================
+
+Nesta prévia NÃO há fotos reais: todos os espaços mostram ilustrações neutras.
+As fotos devem vir do próprio negócio (com autorização de uso e, quando aparecer
+gente, com autorização das pessoas). Não use fotos do Google, do Instagram ou de
+outros sites sem permissão.
+
+Arquivos que entram nesta pasta (formato .jpg, de preferência até 300 KB cada):
+
+  img/hero.jpg          foto principal (topo do site, formato retrato 4:5)
+  img/sobre.jpg         retrato da profissional/equipe ou do espaço (3:4)
+  img/espaco-1.jpg      ambiente (quadrada)
+  img/espaco-2.jpg      ambiente (quadrada)
+  img/trabalho-1.jpg ... img/trabalho-10.jpg   galeria (retrato 3:4)
+
+No index.html, cada espaço tem um comentário <!-- FOTO: img/... --> mostrando
+qual arquivo entra ali. Basta trocar o <div class="ph">...</div> por
+<img src="img/arquivo.jpg" alt="descrição da foto">.
