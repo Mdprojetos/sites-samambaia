@@ -1,23 +1,13 @@
-Fotos de Dr. Lucas Alves Nascimento · Fisioterapeuta
-=====================================
+Fotos de Dr. Lucas Alves Nascimento
+===================================
 
-Nesta prévia, todos os espaços de foto mostram imagens ilustrativas (gradientes e ícones).
-Nenhuma foto foi copiada do Google, do Instagram ou de outra rede do negócio.
-As fotos reais devem ser enviadas pelo próprio negócio e salvas nesta pasta com estes nomes:
+As fotos já estão no site (enviadas em 11/11/2026):
 
-  img/hero.jpg          foto principal do topo (vertical, 4:5, de preferência 1200 x 1500 px)
-  img/trabalho-1.jpg    galeria, fileira de cima (vertical 3:4)
-  img/trabalho-2.jpg
-  img/trabalho-3.jpg
-  img/trabalho-4.jpg
-  img/trabalho-5.jpg
-  img/trabalho-6.jpg    galeria, fileira de baixo (vertical 3:4)
-  img/trabalho-7.jpg
-  img/trabalho-8.jpg
-  img/trabalho-9.jpg
-  img/trabalho-10.jpg
+  img/hero.webp              foto principal do topo (4:5, 960 x 1200 px)
+  img/trabalho-1.webp        galeria (3:4, 480 x 640 px)
+  img/trabalho-2.webp
+  img/trabalho-3.webp
 
-No index.html, cada espaço tem um comentário <!-- img/... --> indicando qual arquivo entra ali.
-Para usar a foto, troque o <figure class="shot ph">...</figure> por
-<figure class="shot"><img src="img/trabalho-1.jpg" alt="descrição da foto" loading="lazy"></figure>
-(e o bloco <div class="hero-frame ph"> por <div class="hero-frame"><img src="img/hero.jpg" alt="..."></div>).
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
+Para pôr mais fotos na galeria, crie img/trabalho-4.webp etc. e troque
+algumas das repetições nas fileiras row1 e row2 do index.html.

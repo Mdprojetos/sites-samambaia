@@ -12,14 +12,27 @@ Prévia de site criada por Marcus Dantas como proposta, sem o conhecimento do ne
 - **Site no perfil:** não informado no perfil
 - **Fonte dos dados:** perfil público do Google Maps, consultado em 11 de novembro de 2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar
+## Fotos
 
-Todos os espaços de foto são ilustrativos. As fotos reais devem vir do próprio negócio: veja `img/LEIA-ME.txt` (img/hero.jpg, img/trabalho-1.jpg … img/trabalho-10.jpg).
+As fotos foram enviadas por Marcus Dantas em 11 de novembro de 2026 e colocadas no site (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: foto principal do topo
+- `img/trabalho-1.webp`: galeria, eletroterapia e infravermelho na perna
+- `img/trabalho-2.webp`: galeria, bandagem elástica na coxa
+- `img/trabalho-3.webp`: galeria, infravermelho e eletroterapia na lombar
+
+As duas fileiras da galeria repetem as 3 fotos.
+
+A imagem "Fisioterapia em Ortopedia" (ilustração com texto) também foi enviada, mas não entrou no site: tem muito texto para a galeria e não mostra o próprio fisioterapeuta.
+
+Antes de mostrar a prévia ao negócio, confirme que a foto do topo é do Dr. Lucas, que as fotos de atendimento são do próprio consultório (e que os pacientes autorizaram o uso) e que ele autoriza o uso. Para trocar uma foto, substitua o arquivo com o mesmo nome (retrato 3:4 na galeria, 4:5 no topo).
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (o site só cita o que aparece no nome/categoria do perfil e manda o resto para o WhatsApp)
-- Fotos reais, Instagram, CNPJ e registro profissional (CREFITO)
+- Instagram, CNPJ e registro profissional (CREFITO)
 - Horário de domingo: o perfil mostrava "Fechado" na semana de feriado (15/11); confirmar o horário normal
 
 Sem clube de aniversário (fisioterapia).
