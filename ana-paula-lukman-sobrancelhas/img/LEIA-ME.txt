@@ -1,0 +1,19 @@
+Fotos de Ana Paula Lukman Sobrancelhas
+=======================================
+
+As fotos já estão no site (enviadas em 11/11/2026):
+
+  img/hero.webp              foto principal do topo (4:5, 960 x 1200 px)
+  img/trabalho-1.webp        galeria (3:4, 480 x 640 px)
+  img/trabalho-2.webp
+  img/trabalho-3.webp
+  img/trabalho-4.webp
+  img/antes-depois-1.webp    seção "Antes e depois" (4:5, 720 x 900 px)
+  img/antes-depois-2.webp
+  img/antes-depois-3.webp
+  img/antes-depois-4.webp
+
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
+Para pôr mais fotos na galeria, crie img/trabalho-5.webp etc. e acrescente um
+<figure class="shot"><img src="img/trabalho-5.webp" alt="..." width="480" height="640" loading="lazy"></figure>
+na fileira row1 do index.html.
