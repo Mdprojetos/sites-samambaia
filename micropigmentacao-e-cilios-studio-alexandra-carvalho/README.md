@@ -12,26 +12,27 @@ Prévia de site criada por Marcus Dantas como proposta, sem o conhecimento do ne
 - **Site no perfil:** não informado no perfil
 - **Fonte dos dados:** perfil público do Google Maps, consultado em 11 de novembro de 2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar
+## Fotos
 
-Todos os espaços de foto são ilustrativos. As fotos reais devem vir do próprio negócio: veja `img/LEIA-ME.txt` (img/hero.jpg, img/trabalho-1.jpg … img/trabalho-10.jpg).
+As fotos foram enviadas por Marcus Dantas em 11 de novembro de 2026 e colocadas no site (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: foto principal do topo
+- `img/trabalho-1.webp`: galeria, cílios
+- `img/trabalho-2.webp`: galeria, sala de atendimento do studio
+- `img/trabalho-3.webp`: galeria, cílios e sobrancelha
+- `img/trabalho-4.webp`: galeria, cílios (mesma foto do topo)
+- `img/trabalho-5.webp`: galeria, cílios e sobrancelhas
+
+As duas fileiras da galeria repetem as 5 fotos.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio negócio e que ele autoriza o uso. Para trocar uma foto, substitua o arquivo com o mesmo nome (retrato 3:4 na galeria, 4:5 no topo).
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (o site só cita o que aparece no nome/categoria do perfil e manda o resto para o WhatsApp)
-- Fotos reais, Instagram, CNPJ
-- Horário de domingo: o perfil mostrava "Fechado" na semana de feriado (15/11); confirmar o horário normal
-
-## Clube de aniversário
+- Instagram, CNPJ
+- Horários: conferir com o negócio, principalmente domingo e feriados
 
 Clube de aniversário: desativado na prévia (BDAY_URL vazio). Para ativar, o negócio segue aniversarios/COMO-CONFIGURAR.md, define desconto e validade e envia a URL /exec.
-
-Com `bdayUrl` vazio (no `<script id="cfg">` do index.html), o formulário valida os campos mas não faz nenhum pedido de rede e mostra a mensagem de prévia.
-
-## Arquivos
-
-- `index.html`: página (dados do negócio em `<script type="application/json" id="cfg">`)
-- `style.css`, `site.js`, `icons.svg`: arquivos compartilhados entre as prévias
-- `privacidade.html`: política de privacidade (LGPD)
-- `vercel.json`: cabeçalhos de segurança (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
-- `aniversarios/`: Code.gs e COMO-CONFIGURAR.md do clube de aniversário (Google Apps Script)
