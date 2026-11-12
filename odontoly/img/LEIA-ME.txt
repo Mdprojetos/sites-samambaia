@@ -1,0 +1,8 @@
+Fotos deste site (enviadas pelo próprio negócio; não usar fotos do Google ou do Instagram sem autorização):
+
+img/hero.jpg       -> foto principal do topo (vertical, 4:5)
+img/sobre.jpg      -> foto da profissional ou do espaço (vertical, 3:4)
+img/trabalho-1.jpg ... img/trabalho-10.jpg -> galeria (vertical, 3:4)
+
+Cada espaço está marcado no index.html com um comentário <!-- foto: img/... -->.
+Basta trocar o <div class="ph">...</div> por <img src="img/arquivo.jpg" alt="descrição da foto">.
