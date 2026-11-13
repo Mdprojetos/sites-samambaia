@@ -19,11 +19,17 @@
 - **Fonte dos dados:** perfil público no Google Maps, lido em 26 de outubro de 2026. Nenhum texto de avaliação ou nome de cliente foi copiado.
 - **Prévia:** https://previa-centro-de-beleza-madames.vercel.app (projeto Vercel: previa-centro-de-beleza-madames)
 
-## Fotos a trocar (pasta img/)
-Os espaços de foto usam ilustrações neutras. Veja `img/LEIA-ME.txt`. As fotos reais devem vir do próprio negócio.
+## Fotos
+Fotos enviadas por Marcus Dantas em 13 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cabelo longo com mechas iluminadas e ondas)
+- `img/sobre.webp`: seção "Sobre" (cabelo castanho iluminado com cachos, na cadeira do salão)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: grade "Alguns trabalhos" (unhas coloridas, cabelo loiro com cachos, unhas nude com glitter)
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio Madame's e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
-- Fotos reais (img/hero.jpg, img/sobre.jpg, img/trabalho-1.jpg a 3) — devem vir do próprio negócio
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e preços (não constam no perfil; não foram inventados)
 - Confirmação de que o número é WhatsApp (o perfil traz só o telefone)
