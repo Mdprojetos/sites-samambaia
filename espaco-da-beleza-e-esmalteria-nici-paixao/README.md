@@ -33,17 +33,28 @@
 - `index.html` (dados do negócio, cores e fontes) + `style.css`, `site.js`, `icons.svg` (compartilhados entre as prévias)
 - `privacidade.html` (LGPD, com aviso de prévia)
 - `vercel.json` (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
-- `img/LEIA-ME.txt` (quais fotos trocar)
+- `img/LEIA-ME.txt` (quais fotos estão no site)
 - `aniversarios/` (Code.gs e COMO-CONFIGURAR.md do clube de aniversário)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 13 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (unhas pretas e nude com a coroa dourada)
+- `img/sobre.webp`: seção "Conheça Nici Paixão" (cabelo vermelho com cachos)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes das unhas pink e das unhas com francesinha vermelha (não foram enviadas fotos do espaço)
+- `img/trabalho-1.webp` a `img/trabalho-5.webp`: galeria (3 de unhas e 2 de cabelo; as fileiras repetem as 5 fotos)
+
+A foto das unhas vermelhas tinha uma moldura rosa, que foi cortada.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio Nici Paixão e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
+- Fotos do espaço (fachada, recepção, bancadas)
 - CNPJ (comentário reservado na política de privacidade)
 - Instagram/@ oficial (não foi copiado do perfil)
 - Confirmar se o telefone do perfil é WhatsApp
