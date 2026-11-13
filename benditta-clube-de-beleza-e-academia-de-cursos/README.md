@@ -31,16 +31,26 @@
 - `index.html` (dados do negócio, cores e fontes) + `style.css`, `site.js`, `icons.svg` (compartilhados entre as prévias)
 - `privacidade.html` (LGPD, com aviso de prévia)
 - `vercel.json` (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
-- `img/LEIA-ME.txt` (quais fotos trocar)
+- `img/LEIA-ME.txt` (quais fotos estão no site)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 13 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (unhas lilás e roxas sobre a toalha com o logo da Benditta)
+- `img/sobre.webp`: seção "Conheça Benditta" (salão com manicures atendendo)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: dois recortes da foto do salão
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (3 de unhas e 1 do salão; as fileiras repetem as 4 fotos)
+
+Uma foto de sobrancelha também foi enviada, mas não entrou: tem a marca d'água "CLEER BEAUTY", de outro negócio.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são da própria Benditta e que ela autoriza o uso. A foto do salão mostra o rosto de profissionais e clientes: confirme também que elas autorizam.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
 - CNPJ (comentário reservado na política de privacidade)
 - Instagram/@ oficial (não foi copiado do perfil)
 - Confirmar se o telefone do perfil é WhatsApp

@@ -1,19 +1,11 @@
-Fotos de Benditta – Clube de Beleza e Academia de Cursos
-=====================================
+Fotos da Benditta (enviadas em 13/11/2026)
 
-Nesta prévia NÃO há fotos reais: todos os espaços mostram ilustrações neutras.
-As fotos devem vir do próprio negócio (com autorização de uso e, quando aparecer
-gente, com autorização das pessoas). Não use fotos do Google, do Instagram ou de
-outros sites sem permissão.
+  img/hero.webp          topo (4:5, 960 x 1200 px)
+  img/sobre.webp         seção "Conheça Benditta" (3:4, 720 x 960 px)
+  img/espaco-1.webp      ambiente, quadrada (480 x 480 px)
+  img/espaco-2.webp      ambiente, quadrada (480 x 480 px)
+  img/trabalho-1.webp ... img/trabalho-4.webp   galeria (3:4, 480 x 640 px)
 
-Arquivos que entram nesta pasta (formato .jpg, de preferência até 300 KB cada):
-
-  img/hero.jpg          foto principal (topo do site, formato retrato 4:5)
-  img/sobre.jpg         retrato da profissional/equipe ou do espaço (3:4)
-  img/espaco-1.jpg      ambiente (quadrada)
-  img/espaco-2.jpg      ambiente (quadrada)
-  img/trabalho-1.jpg ... img/trabalho-10.jpg   galeria (retrato 3:4)
-
-No index.html, cada espaço tem um comentário <!-- FOTO: img/... --> mostrando
-qual arquivo entra ali. Basta trocar o <div class="ph">...</div> por
-<img src="img/arquivo.jpg" alt="descrição da foto">.
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
+Para pôr mais fotos na galeria, crie img/trabalho-5.webp etc. e troque
+algumas das repetições nas fileiras row1 e row2 do index.html.
