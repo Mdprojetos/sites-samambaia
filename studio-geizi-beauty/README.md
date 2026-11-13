@@ -24,11 +24,22 @@
 
 - `index.html` (dados e cores do negócio), `style.css`, `site.js`, `icons.svg` (compartilhados entre as prévias)
 - `privacidade.html` (LGPD), `vercel.json` (CSP, `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
-- `img/` → fotos a trocar (ver `img/LEIA-ME.txt`). As imagens atuais são ilustrações neutras em CSS.
+- `img/` → fotos do site (ver `img/LEIA-ME.txt`)
+
+## Fotos
+
+Fotos enviadas por Marcus Dantas em 13 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: foto principal do topo (unhas azuis)
+- `img/sobre.webp`: interior do studio, na seção "Sobre"
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (2 de unhas e 2 do espaço; as fileiras repetem as 4 fotos)
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net). A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
 
-- fotos reais (hero, sobre e galeria: ver img/LEIA-ME.txt)
 - lista de serviços e valores (o perfil do Google não informa; o site só cita o que aparece no nome/categoria do perfil)
 - CNPJ (política de privacidade)
 - Instagram/redes (não incluídos)
