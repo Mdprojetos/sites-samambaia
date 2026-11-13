@@ -10,7 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>:root{--ink:#16261f;--ink-2:#2f4239;--muted:#56675f;--brand:#2f7a68;--brand-deep:#163c33;--brand-soft:#e5f1ec;--bg:#f3f8f5;--accent:#c9a46a;--accent-soft:#f1e6d2;--on-deep:#eef7f3;--paper:#ffffff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Marcellus",Georgia,serif;--serif-w:400;--sans:"Nunito Sans",system-ui,sans-serif}</style>
+<style>:root{--ink:#16261f;--ink-2:#2f4239;--muted:#56675f;--brand:#2f7a68;--brand-deep:#163c33;--brand-soft:#e5f1ec;--bg:#f3f8f5;--accent:#c9a46a;--accent-soft:#f1e6d2;--on-deep:#eef7f3;--paper:#ffffff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Marcellus",Georgia,serif;--serif-w:400;--sans:"Nunito Sans",system-ui,sans-serif}
+.frame img,.portrait img,.shot img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
+</style>
 </head>
 <body>
 
@@ -40,20 +43,20 @@
     </div>
     <div class="hero-visual" data-hero>
       <!-- foto principal: img/hero.jpg (trocar o .ph por <img src="img/hero.jpg" alt="..."> quando o negócio enviar) -->
-      <div class="frame"><div class="ph"><span class="orb o1"></span><span class="orb o2"></span><svg class="big" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg><span class="ph-note">Imagem ilustrativa</span></div></div>
+      <div class="frame"><img src="img/hero.webp" alt="Sala de atendimento da Mirelly Beauty, com maca capitonê, luminária e o logo dourado na parede" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></span><div><b>Esteticista</b>Perfil no Google</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QN 204</div></div>
     </div>
   </div>
 </header>
 
-<section class="gallery" id="galeria" aria-label="Espaço para fotos">
+<section class="gallery" id="galeria" aria-label="Fotos">
   <div class="wrap head">
-    <h2 data-up>Espaço para as <i>fotos</i> do studio.</h2>
-    <p data-up>Imagens ilustrativas. Na versão final, aqui entram fotos reais enviadas por Mirelly Beauty.</p>
+    <h2 data-up>Conheça o <i>espaço</i>.</h2>
+    <p data-up>A Mirelly Beauty em Samambaia, por dentro.</p>
   </div>
-  <div class="row" id="row1"><figure class="shot"><!-- foto: img/trabalho-1.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-2.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-3.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-4.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-5.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure></div>
-  <div class="row" id="row2"><figure class="shot"><!-- foto: img/trabalho-6.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-7.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-8.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-9.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure><figure class="shot"><!-- foto: img/trabalho-10.jpg --><div class="ph"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure></div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Recepção com espelho iluminado, banquetas de veludo e aparador preto" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Sala de atendimento com maca capitonê e o logo dourado na parede" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Bandeja com café, biscoitos e cartão com a frase Confie em você" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -68,8 +71,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto do espaço ou da profissional: img/sobre.jpg -->
-    <figure class="portrait"><div class="ph"><span class="orb o1"></span><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span class="ph-note">Imagem ilustrativa</span></div><figcaption>Mirelly Beauty</figcaption></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Bandeja dourada com café, biscoitos e um cartão com a frase Confie em você" width="720" height="960" loading="lazy" decoding="async"><figcaption>Mirelly Beauty</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Um espaço de estética <i>pertinho</i> de você.</h2>
       <p data-up>A Mirelly Beauty fica na QN 204, Conjunto 1, Lote 7, Sala 102, em Samambaia Norte. No Google, o espaço aparece como esteticista e tem nota 5,0.</p>

@@ -1,8 +1,11 @@
-Fotos deste site (enviadas pelo próprio negócio; não usar fotos do Google ou do Instagram sem autorização):
+Fotos de Mirelly Beauty (enviadas em 13/11/2026)
 
-img/hero.jpg       -> foto principal do topo (vertical, 4:5)
-img/sobre.jpg      -> foto da profissional ou do espaço (vertical, 3:4)
-img/trabalho-1.jpg ... img/trabalho-10.jpg -> galeria (vertical, 3:4)
+img/hero.webp        -> foto principal do topo (4:5, 960 x 1200 px)
+img/sobre.webp       -> seção "Sobre" (3:4, 720 x 960 px)
+img/trabalho-1.webp  -> galeria (3:4, 480 x 640 px)
+img/trabalho-2.webp
+img/trabalho-3.webp
 
-Cada espaço está marcado no index.html com um comentário <!-- foto: img/... -->.
-Basta trocar o <div class="ph">...</div> por <img src="img/arquivo.jpg" alt="descrição da foto">.
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
+Para pôr mais fotos na galeria, crie img/trabalho-4.webp etc. e troque
+algumas das repetições nas fileiras row1 e row2 do index.html.
