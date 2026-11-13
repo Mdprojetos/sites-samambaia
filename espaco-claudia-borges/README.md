@@ -20,10 +20,19 @@
 - **Projeto na Vercel:** previa-espaco-claudia-borges (endereço público informado no relatório do dia)
 
 ## Fotos
-Todas as imagens são ilustrativas (gradientes e ícones). As fotos reais devem vir do próprio negócio. Ver `img/LEIA-ME.txt`.
+Fotos enviadas por Marcus Dantas em 13 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (salão com cadeiras e espelhos redondos; a marca d'água do celular no canto da foto foi cortada)
+- `img/sobre.webp`: seção "Sobre" (fachada com o letreiro)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes do letreiro e do salão
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (cabelo, salão, unhas e fachada; as fileiras repetem as 4 fotos)
+
+O letreiro da fachada diz "Cláudia Borges Beleza & Boutique" e mostra um WhatsApp começando por "33" (cortado na foto). O site continua com o nome e o telefone do perfil do Google.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio salão e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net) e o vercel.json publicado libera esse endereço em img-src. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
-- Fotos reais do salão e dos trabalhos.
 - WhatsApp (o perfil só tem telefone fixo; os botões usam ligação).
 - Lista de serviços, Instagram e CNPJ.
 - Desconto e validade do Clube de aniversário.
