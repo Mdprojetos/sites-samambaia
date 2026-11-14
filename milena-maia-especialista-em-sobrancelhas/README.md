@@ -18,11 +18,17 @@
 - **Fonte dos dados:** perfil público do Google Maps. O perfil não tem site próprio.
 - **Avaliações:** o site mostra só a nota e o total, sem copiar textos nem nomes.
 
-## Fotos a trocar
-Todas as fotos são ilustrativas. Os arquivos que entram em `img/` estão listados em `img/LEIA-ME.txt`.
+## Fotos
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cliente com sobrancelhas desenhadas, escolhida como foto principal)
+- `img/sobre.webp`: seção "Sobre" (cliente sorrindo, com sobrancelhas desenhadas)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (antes e depois, sobrancelha com cílios e cliente sorrindo; as fileiras repetem as fotos). O antes e depois aparece inteiro, com fundo desfocado nas laterais. Duas fotos de olho eram quase iguais; ficou só uma.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são da própria profissional e que ela e as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
-- Fotos reais (todas as imagens são ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (para a política de privacidade)
 - Instagram e lista de serviços/valores (não constam no perfil)
 - Confirmar se o telefone do perfil é WhatsApp
