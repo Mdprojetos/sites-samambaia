@@ -83,6 +83,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media (max-width:960px){.nav ul,.nav .btn{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.section{padding:70px 0}.rate .btn{margin-left:0}}
 @media (max-width:600px){.nav{top:62px}.hero{padding-top:170px}.map{aspect-ratio:4/5}.rate{padding:32px 24px}.shots{grid-template-columns:1fr 1fr}.cta-box{padding:60px 22px}footer{padding-bottom:100px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-up]{opacity:1;transform:none}}
+img.hero-frame{display:block;object-fit:cover;height:auto}
+.about img.photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.shots img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:20px}
 </style>
 <link rel="stylesheet" href="aniversario.css">
 </head>
@@ -115,13 +118,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div id="status" class="is-closed"><strong><span class="dot"></span><span id="stText">Horário de funcionamento</span></strong><span id="stSub">veja abaixo</span></div>
 </div>
 </div>
-<!-- FOTO: img/hero.jpg (foto principal do negócio, fornecida pelo próprio negócio) -->
-<div class="ph hero-frame" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img class="hero-frame" src="img/hero.webp" alt="Cabelo castanho com mechas e pontas modeladas em cachos, visto de costas no salão" width="960" height="1200" fetchpriority="high">
 </div></section>
 
 <section class="section about" id="sobre"><div class="wrap about-grid">
-<!-- FOTO: img/espaco.jpg (foto do espaço) -->
-<div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img class="photo" data-up src="img/espaco.webp" alt="Lavatórios do salão, com estante iluminada de produtos e o logotipo Mais Beleza na parede" width="800" height="1000" loading="lazy" decoding="async">
 <div data-up>
 <h2>Mais Beleza, em <i>Samambaia Norte</i></h2>
 <p>Mais Beleza fica em QN 204 - Samambaia Norte, Brasília-DF. Para falar com a equipe, o contato público é (61) 3357-3872. Os horários de funcionamento estão logo abaixo.</p>
@@ -130,11 +131,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </div></section>
 
 <section class="section"><div class="wrap">
-<div class="head"><h2>Conheça o <i>espaço</i></h2><p>As fotos reais do negócio entram aqui.</p></div>
+<div class="head"><h2>Alguns <i>trabalhos</i></h2><p>Penteado e unhas feitos no Mais Beleza, em Samambaia Norte.</p></div>
 <div class="shots">
-<!-- FOTO: img/trabalho-1.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
-<!-- FOTO: img/trabalho-2.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
-<!-- FOTO: img/trabalho-3.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img data-up src="img/trabalho-1.webp" alt="Penteado semipreso com cachos loiros" width="480" height="640" loading="lazy" decoding="async">
+<img data-up src="img/trabalho-2.webp" alt="Unhas com francesinha preta, glitter e laço" width="480" height="640" loading="lazy" decoding="async">
+<img data-up src="img/trabalho-3.webp" alt="Unhas em azul com detalhe branco e nude" width="480" height="640" loading="lazy" decoding="async">
 </div>
 </div></section>
 
