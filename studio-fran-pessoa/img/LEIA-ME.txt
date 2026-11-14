@@ -1,1 +1,7 @@
-Coloque aqui as fotos reais enviadas pelo negocio: hero.jpg, sobre.jpg, trabalho-1.jpg ... trabalho-10.jpg.
+Fotos do Studio Fran Pessoa (enviadas em 14/11/2026)
+
+  img/hero.webp          topo (4:5, 960 x 1200 px)
+  img/sobre.webp         seção "Sobre" (3:4, 720 x 960 px) - hoje a ilustração da profissional
+  img/trabalho-1.webp ... img/trabalho-3.webp   galeria (3:4, 480 x 640 px)
+
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
