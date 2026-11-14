@@ -20,10 +20,17 @@
 - **Projeto na Vercel:** previa-refaire-beleza-e-estetica (endereço público informado no relatório do dia)
 
 ## Fotos
-Todas as imagens são ilustrativas (gradientes e ícones). As fotos reais devem vir do próprio negócio. Ver `img/LEIA-ME.txt`.
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (depilação a laser)
+- `img/sobre.webp`: seção "Sobre" (fachada com o letreiro)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes da sala de atendimento e do cantinho do café
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (massagem, depilação a laser e sala; as fileiras repetem as 3 fotos). A foto da massagem veio dentro de um anúncio verde ("Bem simples", Espaço Maria Araújo); foi usada só a foto, sem o texto.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio espaço e que ele e as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net) e o vercel.json publicado libera esse endereço em img-src. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
-- Fotos reais do espaço e dos atendimentos.
 - Horário de segunda-feira (o Google mostrou "Fechado" por causa do feriado de Finados; confirmar).
 - Lista de serviços, Instagram oficial e CNPJ.
 - Desconto e validade do Clube de aniversário.

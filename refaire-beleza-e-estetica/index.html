@@ -15,6 +15,11 @@
   --ink:#221c30;--ink-2:#3d3452;--muted:#635a75;--brand:#6b5b95;--brand-deep:#3a2f57;--brand-soft:#efebf6;--bg-soft:#f8f6fb;--accent:#e4a6b5;--accent-soft:#f8e4e9;--on-deep:#f3f0fa;--line:rgba(34,28,48,.12);--serif:"Marcellus",Georgia,serif;--sans:"Jost",system-ui,sans-serif;--serif-w:400;--frame-radius:200px 200px 200px 24px;
   --paper:#ffffff;--radius:22px;--ease:cubic-bezier(.16,1,.3,1);
 }
+.hero-frame img{display:block;width:100%;height:118%;object-fit:cover;will-change:transform}
+.portrait img{display:block;width:100%;height:116%;object-fit:cover;will-change:transform}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.space img{display:block;width:100%;height:auto;aspect-ratio:1;align-self:start;object-fit:cover;border-radius:18px}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -51,8 +56,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- img/hero.jpg: foto principal do negócio (trocar o div.ph por <img id="heroImg" src="img/hero.jpg" alt="..."> ) -->
-      <div class="hero-frame"><div class="ph" id="heroImg"><svg aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></div>
+      <div class="hero-frame"><img id="heroImg" src="img/hero.webp" alt="Profissional de jaleco rosa fazendo depilação a laser no braço de uma cliente" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0 no Google</b>37 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QR 202, Conj. 1</div></div>
     </div>
@@ -62,22 +66,10 @@
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
     <h2 data-up>Um espaço de <i>cuidado</i>.</h2>
-    <p data-up>Espaços reservados para as fotos reais de Refaire Beleza e Estética. As imagens abaixo são ilustrativas.</p>
+    <p data-up>Atendimentos e o espaço da Refaire Beleza e Estética.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- img/trabalho-1.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-spark"/></svg></div></figure>
-    <!-- img/trabalho-2.jpg --><figure class="shot"><div class="ph v3"><svg aria-hidden="true"><use href="icons.svg#i-drop"/></svg></div></figure>
-    <!-- img/trabalho-3.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <!-- img/trabalho-4.jpg --><figure class="shot"><div class="ph "><svg aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure>
-    <!-- img/trabalho-5.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-spark"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- img/trabalho-6.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <!-- img/trabalho-7.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure>
-    <!-- img/trabalho-8.jpg --><figure class="shot"><div class="ph v3"><svg aria-hidden="true"><use href="icons.svg#i-spark"/></svg></div></figure>
-    <!-- img/trabalho-9.jpg --><figure class="shot"><div class="ph "><svg aria-hidden="true"><use href="icons.svg#i-drop"/></svg></div></figure>
-    <!-- img/trabalho-10.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Profissional fazendo massagem modeladora na barriga de uma cliente" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Depilação a laser no braço de uma cliente" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Sala de atendimento com maca e tapete vermelho" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -96,8 +88,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- img/sobre.jpg: foto da equipe ou do espaço -->
-    <figure class="portrait"><div class="ph v3" id="portraitImg"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div><figcaption>Refaire Beleza e Estética</figcaption></figure>
+    <figure class="portrait"><img id="portraitImg" src="img/sobre.webp" alt="Fachada rosa da Refaire Beleza e Estética, com o letreiro e a porta de vidro" width="720" height="960" loading="lazy" decoding="async"><figcaption>Refaire Beleza e Estética</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Cuidado e <i>atenção</i> em Samambaia Norte.</h2>
       <p data-up>A Refaire Beleza e Estética fica na QR 202, Conjunto 1, em Samambaia Norte, e tem nota 5,0 com 37 avaliações no Google.</p>
@@ -107,8 +98,8 @@
         <li><svg class="ic"><use href="icons.svg#i-clock"/></svg>Terça a sábado</li>
       </ul>
       <div class="space" data-up>
-        <!-- img/espaco-1.jpg --><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
-        <!-- img/espaco-2.jpg --><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
+        <img src="img/espaco-1.webp" alt="Maca com lençol e toalha brancos na sala de atendimento" width="480" height="480" loading="lazy" decoding="async">
+        <img src="img/espaco-2.webp" alt="Cantinho do café na recepção" width="480" height="480" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
