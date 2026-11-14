@@ -18,6 +18,10 @@
   --paper:#ffffff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);
   --serif:"DM Serif Display",Georgia,serif;--serif-w:400;--sans:"DM Sans",system-ui,sans-serif;
 }
+.hero-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -52,8 +56,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- foto: img/hero.jpg (trocar este bloco por <img src="img/hero.jpg" alt="..."> quando o negócio enviar a foto) -->
-      <div class="hero-frame"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto do negócio</span></div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Salão Luís Lima Concept Hair, com cadeiras pretas, bancada com espelhos e piso de porcelanato" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0 no Google</b>130 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia</b>QN 310, Loja 3</div></div>
     </div>
@@ -63,10 +66,10 @@
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
     <h2 data-up>Trabalhos que <i>falam por si</i>.</h2>
-    <p data-up>Espaços reservados para as fotos reais de Luís Lima Concept Hair. As imagens abaixo são ilustrativas.</p>
+    <p data-up>Alguns trabalhos e o espaço do Luís Lima Concept Hair, em Samambaia.</p>
   </div>
-  <div class="row" id="row1"><!-- foto: img/trabalho-1.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 1</span></div></figure><!-- foto: img/trabalho-2.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 2</span></div></figure><!-- foto: img/trabalho-3.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 3</span></div></figure><!-- foto: img/trabalho-4.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 4</span></div></figure><!-- foto: img/trabalho-5.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 5</span></div></figure></div>
-  <div class="row" id="row2"><!-- foto: img/trabalho-6.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 6</span></div></figure><!-- foto: img/trabalho-7.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 7</span></div></figure><!-- foto: img/trabalho-8.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 8</span></div></figure><!-- foto: img/trabalho-9.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 9</span></div></figure><!-- foto: img/trabalho-10.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de trabalho 10</span></div></figure></div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cabelo preto com cachos modelados, visto de costas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Unhas nude com detalhes em folha de ouro" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Estante com produtos para cabelo no salão" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Salão com cadeiras pretas e bancada com espelhos" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -85,8 +88,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto: img/sobre.jpg (profissional ou fachada) -->
-    <figure class="portrait" data-up><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto do espaço</span></div><figcaption>Luís Lima Concept Hair</figcaption></figure>
+    <figure class="portrait" data-up><img src="img/sobre.webp" alt="Fachada do salão, com o letreiro Luís Lima Concept Hair e porta de vidro" width="720" height="960" loading="lazy" decoding="async"><figcaption>Luís Lima Concept Hair</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Um salão de bairro em <i>Samambaia</i>.</h2>
       <p data-up>Luís Lima Concept Hair fica em QN 310, Loja 3, Samambaia, e tem nota 5,0 com 130 avaliações no Google.</p>

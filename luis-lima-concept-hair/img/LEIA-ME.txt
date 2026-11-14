@@ -1,20 +1,7 @@
-Fotos de Luís Lima Concept Hair
+Fotos do Luís Lima Concept Hair (enviadas em 14/11/2026)
 
-Os espaços de foto do site usam imagens ilustrativas (gradientes e ícones).
-As fotos reais devem ser enviadas pelo próprio negócio. Não use fotos do Google, do Instagram ou de outras redes sem autorização.
+  img/hero.webp          topo (4:5, 960 x 1200 px)
+  img/sobre.webp         seção "Sobre", fachada (3:4, 720 x 960 px)
+  img/trabalho-1.webp ... img/trabalho-4.webp   galeria (3:4, 480 x 640 px)
 
-Arquivos esperados nesta pasta (JPG, de preferência com até 300 KB cada):
-- img/hero.jpg      -> foto principal do topo (vertical, 4:5)
-- img/sobre.jpg     -> profissional, equipe ou fachada (vertical, 3:4)
-- img/trabalho-1.jpg    -> galeria, foto 1 (vertical, 3:4)
-- img/trabalho-2.jpg    -> galeria, foto 2 (vertical, 3:4)
-- img/trabalho-3.jpg    -> galeria, foto 3 (vertical, 3:4)
-- img/trabalho-4.jpg    -> galeria, foto 4 (vertical, 3:4)
-- img/trabalho-5.jpg    -> galeria, foto 5 (vertical, 3:4)
-- img/trabalho-6.jpg    -> galeria, foto 6 (vertical, 3:4)
-- img/trabalho-7.jpg    -> galeria, foto 7 (vertical, 3:4)
-- img/trabalho-8.jpg    -> galeria, foto 8 (vertical, 3:4)
-- img/trabalho-9.jpg    -> galeria, foto 9 (vertical, 3:4)
-- img/trabalho-10.jpg   -> galeria, foto 10 (vertical, 3:4)
-
-Em cada espaço do index.html há um comentário <!-- foto: img/... --> indicando qual arquivo entra ali.
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.

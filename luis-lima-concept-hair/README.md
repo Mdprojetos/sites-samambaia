@@ -19,13 +19,19 @@ Prévia criada por Marcus Dantas como proposta, sem o conhecimento do negócio. 
 - **Fonte dos dados:** perfil do Google Maps, lido em 03/11/2026 (https://www.google.com/maps/place/Lu%C3%ADs+Lima+Concept+Hair/data=!4m7!3m6!1s0x935a2d000cd4a3d9:0xa65b0a87ebdf0576!8m2!3d-15.874353!4d-48.0718736!16s%2Fg%2F11w8nzj29m!19sChIJ2aPUDAAtWpMRdgXf64cKW6Y)
 - **Prévia:** https://previa-luis-lima-concept-hair.vercel.app
 
-## Fotos a trocar (pasta img/)
+## Fotos
 
-`img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg`. As fotos reais devem vir do próprio negócio. Detalhes em `img/LEIA-ME.txt`.
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (salão com cadeiras pretas e bancada com espelhos)
+- `img/sobre.webp`: seção "Sobre" (fachada com o letreiro)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (cabelo com cachos, unhas, estante de produtos e salão; as fileiras repetem as 4 fotos)
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio salão e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos reais (os espaços usam imagens ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e valores (o perfil do Maps não informa; o site usa cards genéricos)
 - Desconto/condição e validade do Clube de aniversário (o negócio define)
