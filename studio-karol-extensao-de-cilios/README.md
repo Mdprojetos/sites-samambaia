@@ -18,11 +18,18 @@ Prévia criada por Marcus Dantas como **proposta**, sem o conhecimento do negóc
 - **Fonte dos dados:** perfil público do Google Maps, lido em 30 de outubro de 2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 - **Prévia:** projeto `previa-studio-karol-extensao-de-cilios` na Vercel (endereço público no relatório do dia)
 
-## Fotos a trocar
-Todos os espaços de foto usam imagens ilustrativas. As fotos reais devem vir do próprio negócio: veja `img/LEIA-ME.txt` (hero.jpg, sobre.jpg, espaco-1.jpg, espaco-2.jpg, trabalho-1.jpg … trabalho-10.jpg).
+## Fotos
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cliente com extensão de cílios)
+- `img/sobre.webp`: seção "Sobre" (sala do studio)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes da mesa e da maca
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (cílios de perto, cliente e sala; as fileiras repetem as fotos). A foto dos cílios de perto veio de lado e foi girada.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que ele e as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net) e o vercel.json publicado libera esse endereço em img-src. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
-- Fotos reais (todas as imagens são ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (para a política de privacidade)
 - Instagram e lista de serviços/valores (não constam no perfil do Maps)
 - Confirmar se o número é WhatsApp (o perfil mostra só "Telefone"; os botões usam wa.me)
