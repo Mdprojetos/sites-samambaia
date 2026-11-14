@@ -18,11 +18,19 @@
 - **Fonte dos dados:** perfil público do Google Maps. O perfil não tem site próprio (o campo de site aponta só para o Instagram).
 - **Avaliações:** o site mostra só a nota e o total, sem copiar textos nem nomes.
 
-## Fotos a trocar
-Todas as fotos são ilustrativas. Os arquivos que entram em `img/` estão listados em `img/LEIA-ME.txt`.
+## Fotos
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cabelo loiro com mechas e ondas)
+- `img/sobre.webp`: seção "Sobre" (cabelo castanho liso, com o salão ao fundo)
+- `img/trabalho-1.webp` a `img/trabalho-5.webp`: galeria (5 trabalhos de cabelo; a segunda fileira repete as fotos)
+
+Não foram enviadas fotos de barbearia nem do espaço vazio.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio salão e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
-- Fotos reais (todas as imagens são ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (para a política de privacidade)
 - Lista de serviços e valores (não consta no perfil); o perfil aponta para um Instagram, que não foi usado no site
 - Confirmar se o telefone do perfil é WhatsApp
