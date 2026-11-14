@@ -15,13 +15,21 @@ Prévia criada por Marcus Dantas como **proposta**. Não é o site oficial do ne
 
 **Fonte dos dados:** perfil público do Google Maps, lido em 28 de outubro de 2026. Só foram usados nome, categoria, endereço, telefone, horários, nota e número de avaliações. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos
 
-Todos os espaços de foto usam ilustrações neutras. As fotos reais devem vir do próprio negócio: `img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg` (detalhes em `img/LEIA-ME.txt`; cada espaço tem um comentário `FOTO:` no `index.html`).
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (corte degradê com desenho)
+- `img/sobre.webp`: seção "Sobre" (salão com as cadeiras e os espelhos)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (3 de cabelo feminino e o corte degradê; a segunda fileira repete as fotos)
+
+Os rostos de pessoas que apareciam sem ser o foco (um cliente esperando e uma pessoa refletida no espelho) foram desfocados.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio salão e que ele e os clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos (todas ilustrativas).
 - Lista de serviços e valores (o perfil não informa; a página não lista serviços).
 - Horário de segunda-feira: o perfil mostra "00:00–19:30" (provável erro de cadastro), por isso a prévia mostra "Consulte".
 - Instagram e CNPJ. Confirmar se (61) 99189-5104 é WhatsApp.
