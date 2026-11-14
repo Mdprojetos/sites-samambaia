@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="style.css">
 <style>
 :root{--ink:#221a2b;--ink-2:#3d3049;--muted:#655a70;--brand:#5d3f7d;--brand-deep:#3a2552;--brand-soft:#efe8f5;--soft:#f8f5fa;--accent:#c9a24d;--accent-soft:#f4ead2;--on-dark:#f4eefa;--paper:#fff;--line:rgba(0,0,0,.12);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Bodoni Moda",Georgia,serif;--serif-w:400;--sans:Jost,system-ui,sans-serif}
+
+img.ph{display:block;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.space img{display:block;width:100%;height:auto;aspect-ratio:1;align-self:start;object-fit:cover;border-radius:18px}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 <script type="application/json" id="cfg">{"name": "Salão La Belle", "phone": "(61) 98245-8224", "hours": {"1": [[510, 1140]], "2": [[510, 1140]], "3": [[510, 1140]], "4": [[510, 1140]], "5": [[510, 1140]], "6": [[510, 1080]]}, "mapSrc": "https://www.google.com/maps?q=Sal%C3%A3o%20La%20Belle%20Qn%20204%20Conjunto%201A%2C%20Lote%2009%20-%20Loja%2001%20-%20Samambaia%20Norte%2C%20Bras%C3%ADlia%20-%20DF%2C%2072316-070&output=embed", "gaId": "", "bdayUrl": ""}</script>
 </head>
@@ -48,8 +53,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- FOTO: img/hero.jpg (foto principal do espaço ou de um trabalho, enviada pelo próprio negócio) -->
-      <div class="hero-frame"><div class="ph" role="img" aria-label="Espaço reservado para a foto principal"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></div>
+      <div class="hero-frame"><img class="ph" src="img/hero.webp" alt="Cabelo preto longo com cachos modelados, visto de costas no salão" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 4,8 no Google</b>33 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QN 204</div></div>
     </div>
@@ -59,22 +63,10 @@
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
     <h2 data-up>Galeria de <i>trabalhos</i>.</h2>
-    <p data-up>Espaço reservado para as fotos reais de Salão La Belle. Nesta prévia aparecem só ilustrações.</p>
+    <p data-up>Mechas, cortes, escovas e unhas feitos no Salão La Belle.</p>
   </div>
-  <div class="row" id="row1">
-    <figure class="shot"><!-- FOTO: img/trabalho-1.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 1"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-2.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-3.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 3"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-4.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 4"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-5.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 5"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <figure class="shot"><!-- FOTO: img/trabalho-6.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 6"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-7.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 7"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-8.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 8"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-9.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 9"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-10.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 10"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cabelo longo com mechas platinadas e pontas repicadas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Corte chanel com mechas acinzentadas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Unhas curtas em esmalte cobre cintilante" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -99,8 +91,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- FOTO: img/sobre.jpg (retrato da profissional/equipe ou do espaço) -->
-    <figure class="portrait"><div class="ph" role="img" aria-label="Espaço reservado para a foto da equipe ou do espaço"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div><figcaption>Salão La Belle</figcaption></figure>
+    <figure class="portrait"><img class="ph" src="img/sobre.webp" alt="Cabelo longo com mechas e pontas modeladas, em frente ao painel do Salão La Belle" width="720" height="960" loading="lazy" decoding="async"><figcaption>Salão La Belle</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Conheça <i>Salão La Belle</i>.</h2>
       <p data-up>Salão La Belle fica em Samambaia Norte, Brasília – DF (QN 204, Conjunto 1A, Lote 09, Loja 01). No Google, tem nota 4,8 a partir de 33 avaliações.</p>
@@ -111,9 +102,8 @@
         <li><svg class="ic"><use href="icons.svg#i-wa"/></svg>Atendimento pelo WhatsApp</li>
       </ul>
       <div class="space" data-up>
-        <!-- FOTOS: img/espaco-1.jpg e img/espaco-2.jpg -->
-        <div class="ph" role="img" aria-label="Espaço reservado para foto do ambiente 1"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
-        <div class="ph" role="img" aria-label="Espaço reservado para foto do ambiente 2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
+        <img src="img/espaco-1.webp" alt="Corte chanel com mechas acinzentadas, visto de perto" width="480" height="480" loading="lazy" decoding="async">
+        <img src="img/espaco-2.webp" alt="Unhas em esmalte cobre, vistas de perto" width="480" height="480" loading="lazy" decoding="async">
       </div>
     </div>
   </div>

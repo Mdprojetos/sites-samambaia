@@ -33,14 +33,22 @@
 - `vercel.json` (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
 - `img/LEIA-ME.txt` (quais fotos trocar)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cabelo preto com cachos; a foto veio com laterais desfocadas, que foram cortadas)
+- `img/sobre.webp`: seção "Conheça" (cabelo com mechas em frente ao painel do salão)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes do corte chanel e das unhas (não foram enviadas fotos do ambiente; trocar quando houver)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (mechas, chanel e unhas; as fileiras repetem as 3 fotos)
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio salão e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
+- Fotos do ambiente do salão
 - CNPJ (comentário reservado na política de privacidade)
 - Instagram/@ oficial (não foi copiado do perfil)
 - Confirmar se o telefone do perfil é WhatsApp
