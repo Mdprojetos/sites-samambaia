@@ -19,6 +19,10 @@
   --serif:Fraunces,Georgia,serif;--serif-w:500;--sans:"Nunito Sans",system-ui,sans-serif;
   --frame-radius:200px 200px 24px 24px;
 }
+.hero-frame img{display:block;width:100%;height:110%;object-fit:cover;will-change:transform}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -47,8 +51,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- foto principal: img/hero.jpg (trocar o .ph por <img src="img/hero.jpg" alt="...">) -->
-      <div class="hero-frame"><div class="ph" id="heroPh" role="img" aria-label="Espaço para a foto principal"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-nail"/></svg></div></div>
+      <div class="hero-frame"><img id="heroPh" src="img/hero.webp" alt="Salão Marli Studio de Beleza, com o logotipo na parede, cadeiras e poltrona" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-nail"/></svg></span><div><b>Beleza e esmalteria</b>Studio Meu Momento</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>Brasília – DF</div></div>
     </div>
@@ -57,29 +60,11 @@
 
 <section class="gallery" id="trabalhos" aria-label="Galeria de trabalhos">
   <div class="wrap head">
-    <h2 data-up>Espaço para os <i>trabalhos</i>.</h2>
-    <p data-up>Aqui entram fotos reais enviadas por Marli Studio de Beleza. Nesta prévia, os quadros são ilustrativos.</p>
+    <h2 data-up>Alguns <i>trabalhos</i>.</h2>
+    <p data-up>Alguns trabalhos e o espaço do Marli Studio de Beleza, em Samambaia Norte.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- foto: img/trabalho-1.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 1"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-2.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 2"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-3.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 3"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-4.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 4"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- foto: img/trabalho-5.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 5"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-6.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 6"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-7.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 7"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-8.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 8"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cabelo loiro com mechas e ondas, visto de costas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Unhas curtas em esmalte branco leitoso" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Cabelo castanho com mechas douradas e ondas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Esmalteria com sofá rosé, estante de esmaltes e poltronas" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -98,8 +83,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto do espaço ou da profissional: img/sobre.jpg -->
-    <figure class="portrait"><div class="ph" role="img" aria-label="Espaço para foto do espaço ou da equipe"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div><figcaption>Marli Studio de Beleza</figcaption></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Esmalteria Meu Momento, com estante de esmaltes, mesas de manicure e poltronas" width="720" height="960" loading="lazy" decoding="async"><figcaption>Marli Studio de Beleza</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Um studio para o seu <i>momento</i>.</h2>
       <p data-up>Marli studío de beleza e esmalteria Meu Momento aparece no Google como <strong>Salão de Beleza</strong> em Samambaia Norte – DF, com nota 4,7 de 5 em 145 avaliações.</p>

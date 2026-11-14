@@ -18,11 +18,17 @@
 - **Fonte dos dados:** perfil público do Google Maps. O perfil não tem site próprio (o campo de site aponta só para uma página de links, sandwiche.me).
 - **Avaliações:** o site mostra só a nota e o total, sem copiar textos nem nomes.
 
-## Fotos a trocar
-Todas as fotos são ilustrativas. Os arquivos que entram em `img/` estão listados em `img/LEIA-ME.txt`.
+## Fotos
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (salão com o logotipo Marli na parede)
+- `img/sobre.webp`: seção "Sobre" (esmalteria com estante de esmaltes e mesas de manicure)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (2 de cabelo, 1 de unhas e 1 da esmalteria; a segunda fileira repete as fotos). A foto das unhas veio com moldura de story, que foi cortada.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que ele autoriza o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
-- Fotos reais (todas as imagens são ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (para a política de privacidade)
 - Instagram e lista de serviços/valores (não constam no perfil)
 - Confirmar se o telefone do perfil é WhatsApp
