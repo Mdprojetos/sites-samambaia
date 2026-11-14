@@ -14,17 +14,20 @@ Perfil público do negócio no Google Maps, lido em 24/10/2026. Só foram usados
 ## Prévia
 Página com `noindex, nofollow` e faixa fixa: "Prévia de site criada por Marcus Dantas como proposta. Não é o site oficial do negócio."
 
-## Fotos a trocar (pasta `img/`)
-Todos os espaços de foto usam ilustrações neutras. As fotos reais devem ser enviadas pelo próprio negócio:
-- `img/hero.jpg` (foto principal)
-- `img/sobre.jpg` (espaço ou equipe)
-- `img/trabalho-1.jpg` a `img/trabalho-10.jpg` (galeria)
+## Fotos
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (a profissional)
+- `img/sobre.webp`: seção "Sobre" (logotipo Lydianne Freitas Estética Facial e Corporal)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria "Antes e depois" (pescoço, testa e testa). Cada antes e depois aparece inteiro, com fundo desfocado onde sobra espaço.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que ele e as clientes autorizam o uso (principalmente os antes e depois).
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Clube de aniversário
 Desativado na prévia (`data-url` vazio no formulário): nada é enviado nem guardado. Para ativar, o negócio segue `aniversarios/COMO-CONFIGURAR.md`, define desconto/condição e validade e envia a URL `/exec`.
 
 ## O que faltou
-- fotos reais (img/hero.jpg, img/sobre.jpg, img/trabalho-1.jpg a img/trabalho-10.jpg)
 - lista de serviços/procedimentos
 - texto "Sobre" (história, equipe)
 - CNPJ (política de privacidade)
