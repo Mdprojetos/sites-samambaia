@@ -33,17 +33,27 @@
 - `vercel.json` (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
 - `img/LEIA-ME.txt` (quais fotos trocar)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (extensão de cílios)
+- `img/sobre.webp`: seção "Conheça" (folheto do Espaço Belapele com a lista de serviços, inteiro sobre fundo desfocado)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes do "depois" da sobrancelha e do buço (não há fotos do ambiente; trocar quando houver)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (3 antes e depois mostrados inteiros sobre fundo desfocado e os cílios; as fileiras repetem as fotos)
+
+O antes e depois do buço veio de cabeça para baixo: cada metade foi girada, mantendo o "antes" em cima.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio espaço e que as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
+- Valores (o folheto enviado lista os serviços, mas os cards ainda só levam ao WhatsApp)
+- Fotos do ambiente
 - CNPJ (comentário reservado na política de privacidade)
-- Instagram/@ oficial (não foi copiado do perfil)
-- Confirmar se o telefone do perfil é WhatsApp
+- Instagram: o folheto mostra @belapele.oficial (ainda não usado no site)
+- (O folheto confirma o WhatsApp (61) 99257-7721, o mesmo do perfil)
 - Desconto e validade do Clube de aniversário
 
 Clube de aniversário: desativado na prévia (BDAY_URL vazio). Para ativar, o negócio segue aniversarios/COMO-CONFIGURAR.md, define desconto e validade e envia a URL /exec.
