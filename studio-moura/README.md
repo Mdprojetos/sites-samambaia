@@ -19,13 +19,21 @@ Prévia criada por Marcus Dantas como proposta, sem o conhecimento do negócio. 
 - **Fonte dos dados:** perfil do Google Maps, lido em 03/11/2026 (https://www.google.com/maps/place/Studio+Moura/data=!4m7!3m6!1s0x935bd3d6dea7d095:0xfe4ed48ae4bfdf12!8m2!3d-15.8917792!4d-48.1074419!16s%2Fg%2F11rn722s8q!19sChIJldCn3tbTW5MREt-_5IrUTv4)
 - **Prévia:** https://previa-studio-moura.vercel.app
 
-## Fotos a trocar (pasta img/)
+## Fotos
 
-`img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg`. As fotos reais devem vir do próprio negócio. Detalhes em `img/LEIA-ME.txt`.
+Fotos enviadas por Marcus Dantas em 14 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (cabelo acobreado com ondas)
+- `img/sobre.webp`: seção "Sobre" (penteado semipreso)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (2 de unhas, penteado infantil com laço e cabelo acobreado; as fileiras repetem as fotos)
+
+Não foram enviadas fotos do espaço. Uma das fotos é de uma criança (de costas); confirme a autorização dos responsáveis antes de mostrar a prévia.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que ele e as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos reais (os espaços usam imagens ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e valores (o perfil do Maps não informa; o site usa cards genéricos)
 - Instagram (não aparece no perfil do Maps)
