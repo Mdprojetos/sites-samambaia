@@ -1,0 +1,7 @@
+Fotos da Estética Requinte (enviadas em 15/11/2026)
+
+  img/hero.webp          topo (4:5, 960 x 1200 px)
+  img/espaco.webp        seção "Sobre" (3:4, 720 x 960 px)
+  img/trabalho-1.webp ... img/trabalho-3.webp   galeria (3:4, 480 x 640 px)
+
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
