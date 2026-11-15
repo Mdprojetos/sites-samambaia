@@ -34,14 +34,24 @@
 - `img/LEIA-ME.txt` (quais fotos trocar)
 - `aniversarios/` (Code.gs e COMO-CONFIGURAR.md do clube de aniversário)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 15 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (profissional fazendo massagem facial com pedra rosa)
+- `img/sobre.webp`: seção "Conheça" (produtos profissionais de limpeza de pele)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recortes das mãos no atendimento e do "depois" da limpeza de pele (não há fotos do ambiente; trocar quando houver)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (antes e depois com a marca Depilart's, mostrado inteiro sobre fundo desfocado; atendimento; produtos). As fileiras repetem as fotos.
+
+Duas fotos enviadas NÃO foram usadas: um antes e depois com marca d'água "@drajessicasouzaa" e outro com "Dra Adriana Menezes". As marcas indicam que são de outras profissionais; só entram se a Depilart's confirmar que são dela e que tem autorização.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio espaço e que as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
+- Fotos do ambiente
 - CNPJ (comentário reservado na política de privacidade)
 - Instagram/@ oficial (não foi copiado do perfil)
 - Confirmar se o telefone do perfil é WhatsApp
