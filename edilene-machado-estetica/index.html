@@ -83,6 +83,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media (max-width:960px){.nav ul,.nav .btn{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.section{padding:70px 0}.rate .btn{margin-left:0}}
 @media (max-width:600px){.nav{top:62px}.hero{padding-top:170px}.map{aspect-ratio:4/5}.rate{padding:32px 24px}.shots{grid-template-columns:1fr 1fr}.cta-box{padding:60px 22px}footer{padding-bottom:100px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-up]{opacity:1;transform:none}}
+img.hero-frame{display:block;object-fit:cover;height:auto}
+.about img.photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.shots img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:20px}
 </style>
 <link rel="stylesheet" href="aniversario.css">
 </head>
@@ -116,13 +119,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div id="status" class="is-closed"><strong><span class="dot"></span><span id="stText">Horário de funcionamento</span></strong><span id="stSub">veja abaixo</span></div>
 </div>
 </div>
-<!-- FOTO: img/hero.jpg (foto principal do negócio, fornecida pelo próprio negócio) -->
-<div class="ph hero-frame" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img class="hero-frame" src="img/hero.webp" alt="Edilene Machado sorrindo, de jaleco azul-claro bordado, na sala de atendimento" width="960" height="1200" fetchpriority="high">
 </div></section>
 
 <section class="section about" id="sobre"><div class="wrap about-grid">
-<!-- FOTO: img/espaco.jpg (foto do espaço) -->
-<div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img class="photo" data-up src="img/espaco.webp" alt="Arte “Quem sou eu?” com Edilene Machado sentada em uma poltrona e os pontos do seu trabalho: emagrecimento, redução de medidas, flacidez, celulite e tratamento facial" width="800" height="1000" loading="lazy" decoding="async">
 <div data-up>
 <h2>Edilene Machado Estética, em <i>Samambaia Norte</i></h2>
 <p>Edilene Machado Estética fica em Qn 204 Conjunto 01 Lote 10 - Sala 102, Samambaia Norte, Brasília-DF. Para falar com a equipe, o contato público é (61) 99847-7816. Os horários de funcionamento estão logo abaixo.</p>
@@ -130,12 +131,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </div>
 </div></section>
 
-<section class="section"><div class="wrap">
-<div class="head"><h2>Conheça o <i>espaço</i></h2><p>As fotos reais do negócio entram aqui.</p></div>
+<section class="section" id="galeria"><div class="wrap">
+<div class="head"><h2>Conheça o <i>espaço</i></h2><p>O prédio, o método e a Edilene na sala de atendimento.</p></div>
 <div class="shots">
-<!-- FOTO: img/trabalho-1.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
-<!-- FOTO: img/trabalho-2.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
-<!-- FOTO: img/trabalho-3.jpg --><div class="ph" data-up aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+<img data-up src="img/trabalho-1.webp" alt="Fachada azul do prédio na Qn 204, com a placa verde de estética no segundo andar" width="480" height="640" loading="lazy" decoding="async">
+<img data-up src="img/trabalho-2.webp" alt="Arte do Método de Emagrecimento e Redução de Medidas: avaliação, drenagem, desintoxicação, orientação nutricional e tratamentos personalizados" width="480" height="640" loading="lazy" decoding="async">
+<img data-up src="img/trabalho-3.webp" alt="Edilene Machado de jaleco azul-claro, com as mãos na cintura" width="480" height="640" loading="lazy" decoding="async">
 </div>
 </div></section>
 
@@ -208,7 +209,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div class="ctas"><a class="btn btn-primary" href="https://wa.me/5561998477816?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Edilene%20Machado%20Est%C3%A9tica." rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>Chamar no WhatsApp</a></div>
 </div></div></section>
 </main>
-<footer><div class="wrap"><span>© <span id="yr"></span> · Prévia ilustrativa para Edilene Machado Estética. Dados do perfil público no Google Maps. · <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a></span><span>Prévia criada por Marcus Dantas como proposta. Não é o site oficial.</span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> · Prévia para Edilene Machado Estética. Dados do perfil público no Google Maps. · <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a></span><span>Prévia criada por Marcus Dantas como proposta. Não é o site oficial.</span></div></footer>
 <a class="fab" href="https://wa.me/5561998477816?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Edilene%20Machado%20Est%C3%A9tica." rel="noopener" aria-label="Chamar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
 <script>
 const HOURS={"0":[],"1":[[480,1200]],"2":[[480,1200]],"3":[[480,1200]],"4":[[480,1200]],"5":[[480,1200]],"6":[[540,780]]};
