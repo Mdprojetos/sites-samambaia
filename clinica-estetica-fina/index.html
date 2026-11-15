@@ -16,7 +16,12 @@
   --acc:#c8a97e;--acc-soft:#f1e8da;--paper:#fff;
   --line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);
   --serif:"Playfair Display",Georgia,serif;--sans:"Jost",system-ui,sans-serif;--hw:500;--bar:30px;
-}</style>
+}
+.frame .hero-img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block}
+.no-gsap .shot[aria-hidden="true"]{display:none}
+</style>
 <link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="aniversario.css">
 </head>
@@ -70,8 +75,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- foto principal: img/hero.jpg (trocar o bloco .ph por <img src="img/hero.jpg" alt="..."> quando o negócio enviar) -->
-      <div class="frame"><span class="ring a"></span><span class="ring b"></span><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Espaço para a foto principal</span></div></div>
+      <div class="frame"><span class="ring a"></span><span class="ring b"></span><img class="hero-img" src="img/hero.webp" alt="Recepção da Clínica Estética Fina, com poltronas rosê, lustre de cristal e o logo da borboleta iluminado" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="#i-star"/></svg></span><div><b>Nota 4,9 no Google</b>37 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="#i-pin"/></svg></span><div><b>Samambaia Norte</b>Quadra 202, Conjunto 03, Lote 06</div></div>
     </div>
@@ -80,34 +84,11 @@
 
 <section class="gal" id="galeria" aria-label="Galeria de fotos">
   <div class="wrap head">
-    <h2 data-up>Nosso <i>espaço</i>.</h2>
-    <p data-up>Espaço reservado para fotos do próprio negócio: trabalhos, ambiente e equipe.</p>
+    <h2 data-up>Resultados e <i>espaço</i>.</h2>
+    <p data-up>Resultados de antes e depois e as salas de atendimento da Clínica Estética Fina.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- foto: img/trabalho-1.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-image"/></svg><span>Foto 1</span></div></figure>
-    <!-- foto: img/trabalho-2.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Foto 2</span></div></figure>
-    <!-- foto: img/trabalho-3.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-image"/></svg><span>Foto 3</span></div></figure>
-    <!-- foto: img/trabalho-4.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Foto 4</span></div></figure>
-    <!-- foto: img/trabalho-5.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-image"/></svg><span>Foto 5</span></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- foto: img/trabalho-6.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Foto 6</span></div></figure>
-    <!-- foto: img/trabalho-7.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-image"/></svg><span>Foto 7</span></div></figure>
-    <!-- foto: img/trabalho-8.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Foto 8</span></div></figure>
-    <!-- foto: img/trabalho-9.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-image"/></svg><span>Foto 9</span></div></figure>
-    <!-- foto: img/trabalho-10.jpg (enviar pelo negócio) -->
-    <figure class="shot"><div class="ph"><svg><use href="#i-sparkle"/></svg><span>Foto 10</span></div></figure>
-  </div>
-  <p class="note wrap">Imagens ilustrativas. As fotos reais entram aqui quando o negócio enviar.</p>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Abdômen antes (em cima) e depois (embaixo) do tratamento, de frente" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Abdômen e quadril antes (à esquerda) e depois (à direita) do tratamento, de perfil" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Sala de atendimento com maca, aparelhos e a frase “Seja seu próprio padrão de beleza” na parede" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Poltronas rosê e logo da borboleta na recepção" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section how" id="agendar">
@@ -126,8 +107,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto do espaço ou da equipe: img/espaco.jpg -->
-    <figure class="portrait"><div class="ph"><svg><use href="#i-image"/></svg><span>Espaço para foto do ambiente</span></div><figcaption>Clínica Estética Fina</figcaption></figure>
+    <figure class="portrait"><img src="img/espaco.webp" alt="Sala de atendimento com maca, cadeira e a frase “Ame-se por inteiro” na parede" width="800" height="1000" loading="lazy" decoding="async"><figcaption>Clínica Estética Fina</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Clínica de estética em <i>Samambaia Norte</i>.</h2>
       <p data-up>Clínica Estética Fina atende em Quadra 202, Conjunto 03, Lote 06, Samambaia Norte, e tem nota 4,9 de 5 em 37 avaliações no Google.</p>
