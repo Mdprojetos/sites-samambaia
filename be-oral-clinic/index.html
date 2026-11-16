@@ -19,6 +19,10 @@
   --serif:"DM Serif Display",Georgia,serif;--serif-w:400;--sans:"Source Sans 3",system-ui,sans-serif;
   --frame-radius:40px 40px 40px 140px;
 }
+.hero-frame img{display:block;width:100%;height:110%;object-fit:cover;will-change:transform}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -47,8 +51,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- foto principal: img/hero.jpg (trocar o .ph por <img src="img/hero.jpg" alt="...">) -->
-      <div class="hero-frame"><div class="ph" id="heroPh" role="img" aria-label="Espaço para a foto principal"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-tooth"/></svg></div></div>
+      <div class="hero-frame"><img id="heroPh" src="img/hero.webp" alt="Recepção da Be Oral Clinic, com o nome da clínica em letras douradas sobre parede iluminada" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-implant"/></svg></span><div><b>Implantes</b>Em Samambaia</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia</b>Brasília – DF</div></div>
     </div>
@@ -57,29 +60,11 @@
 
 <section class="gallery" id="trabalhos" aria-label="Galeria de trabalhos">
   <div class="wrap head">
-    <h2 data-up>Espaço para os <i>trabalhos</i>.</h2>
-    <p data-up>Aqui entram fotos reais enviadas por Be Oral Clinic. Nesta prévia, os quadros são ilustrativos.</p>
+    <h2 data-up>Sorrisos <i>transformados</i>.</h2>
+    <p data-up>Antes e depois de pacientes da Be Oral Clinic.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- foto: img/trabalho-1.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 1"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-2.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 2"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-3.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 3"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-4.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 4"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- foto: img/trabalho-5.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 5"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-6.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 6"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-7.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 7"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <!-- foto: img/trabalho-8.jpg -->
-    <figure class="shot"><div class="ph" role="img" aria-label="Espaço para foto de trabalho 8"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Antes e depois do sorriso de um paciente de barba grisalha, com os dentes reabilitados" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Antes e depois do sorriso de um paciente jovem, com dentes mais claros e alinhados" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Logotipo da Be Oral Clinic em dourado" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -98,8 +83,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto do espaço ou da profissional: img/sobre.jpg -->
-    <figure class="portrait"><div class="ph" role="img" aria-label="Espaço para foto do espaço ou da equipe"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-image"/></svg></div><figcaption>Be Oral Clinic</figcaption></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Dentista de máscara atendendo um paciente na cadeira odontológica, em sala com persianas" width="720" height="960" loading="lazy" decoding="async"><figcaption>Be Oral Clinic</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Uma clínica com foco em <i>implantes</i>.</h2>
       <p data-up>Be Oral Clinic - IMPLANTES EM SAMAMBAIA aparece no Google como <strong>Dentista</strong> em Samambaia – DF, com nota 5,0 de 5 em 39 avaliações.</p>
