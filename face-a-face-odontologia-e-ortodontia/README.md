@@ -15,16 +15,29 @@ Prévia criada por Marcus Dantas como **proposta**, sem o conhecimento do negóc
   - Sexta: 8h30 – 17h30
   - Sábado: Fechado
   - Domingo: Fechado
-- **Fonte dos dados:** perfil público do Google Maps, lido em 30 de outubro de 2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
+- **Fonte dos dados:** perfil público do Google Maps, lido em 30 de outubro de 2026. Nenhum texto de avaliação ou nome de cliente foi copiado; as imagens foram enviadas por Marcus Dantas.
 - **Prévia:** projeto `previa-face-a-face-odontologia-e-ortodontia` na Vercel (endereço público no relatório do dia)
 
-## Fotos a trocar
-Todos os espaços de foto usam imagens ilustrativas. As fotos reais devem vir do próprio negócio: veja `img/LEIA-ME.txt` (hero.jpg, sobre.jpg, espaco-1.jpg, espaco-2.jpg, trabalho-1.jpg … trabalho-10.jpg).
+## Fotos
+Imagens enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (retrato da dentista de touca rosa e jaleco azul-marinho)
+- `img/sobre.webp`: seção "Sobre" (faixa com a lista de especialidades)
+- `img/espaco-1.webp`: logotipo com "Sala 101"
+- `img/espaco-2.webp`: retrato da dentista (recorte)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (dentista, logotipo e lista de especialidades)
+
+Só vieram 3 imagens (retrato, logotipo e faixa), por isso elas se repetem. Fotos do consultório e da recepção deixariam a galeria mais variada.
+
+A faixa lista as especialidades: ortodontia, DTM e dor orofacial, clareamento, dentística restauradora, dentística estética, bruxismo, endodontia e exodontia.
+
+Confirme o nome da dentista e que ela autoriza o uso da foto antes de mostrar a prévia.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
-- Fotos reais (todas as imagens são ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (para a política de privacidade)
-- Instagram e lista de serviços/valores (não constam no perfil do Maps)
+- Instagram e valores (não constam no perfil do Maps; as especialidades estão na faixa enviada)
 - Confirmar se o número é WhatsApp (o perfil mostra só "Telefone"; os botões usam wa.me)
 - Desconto/condição e validade do clube de aniversário (definir com o negócio)
 
