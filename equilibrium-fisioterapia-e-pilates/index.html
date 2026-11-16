@@ -15,6 +15,11 @@
   --ink:#1b2a22;--ink-2:#33473b;--muted:#5d6e63;--brand:#3d7a58;--brand-deep:#1f4232;--brand-soft:#e8f2ec;--bg-soft:#f5f9f6;--accent:#e8a87c;--accent-soft:#fbeadf;--on-deep:#eef6f1;--line:rgba(27,42,34,.12);--serif:"Lora",Georgia,serif;--sans:"Nunito Sans",system-ui,sans-serif;--serif-w:500;--frame-radius:200px 24px 200px 24px;
   --paper:#ffffff;--radius:22px;--ease:cubic-bezier(.16,1,.3,1);
 }
+.hero-frame img{display:block;width:100%;height:118%;object-fit:cover;will-change:transform}
+.portrait img{display:block;width:100%;height:116%;object-fit:cover;will-change:transform}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.space img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:18px}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -50,8 +55,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- img/hero.jpg: foto principal do negócio (trocar o div.ph por <img id="heroImg" src="img/hero.jpg" alt="..."> ) -->
-      <div class="hero-frame"><div class="ph" id="heroImg"><svg aria-hidden="true"><use href="icons.svg#i-body"/></svg></div></div>
+      <div class="hero-frame"><img id="heroImg" src="img/hero.webp" alt="Sala da Equilibrium com ladder barrel, chair, reformers, bolas e luzes de LED no teto" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 4,5 no Google</b>15 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QR 208, Conj. 01</div></div>
     </div>
@@ -61,22 +65,10 @@
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
     <h2 data-up>Movimento com <i>cuidado</i>.</h2>
-    <p data-up>Espaços reservados para as fotos reais de Equilibrium Fisioterapia e Pilates. As imagens abaixo são ilustrativas.</p>
+    <p data-up>Aparelhos de pilates e sala de fisioterapia na QR 208, em Samambaia Norte.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- img/trabalho-1.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-body"/></svg></div></figure>
-    <!-- img/trabalho-2.jpg --><figure class="shot"><div class="ph v3"><svg aria-hidden="true"><use href="icons.svg#i-drop"/></svg></div></figure>
-    <!-- img/trabalho-3.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <!-- img/trabalho-4.jpg --><figure class="shot"><div class="ph "><svg aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure>
-    <!-- img/trabalho-5.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-body"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- img/trabalho-6.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-    <!-- img/trabalho-7.jpg --><figure class="shot"><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-leaf"/></svg></div></figure>
-    <!-- img/trabalho-8.jpg --><figure class="shot"><div class="ph v3"><svg aria-hidden="true"><use href="icons.svg#i-body"/></svg></div></figure>
-    <!-- img/trabalho-9.jpg --><figure class="shot"><div class="ph "><svg aria-hidden="true"><use href="icons.svg#i-drop"/></svg></div></figure>
-    <!-- img/trabalho-10.jpg --><figure class="shot"><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-heart"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Ladder barrel, chair e reformer, com a sala de fisioterapia de portas de vidro ao fundo" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Logotipo da Equilibrium Fisioterapia e Pilates" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Cadillac e reformer em frente aos espelhos do estúdio" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -95,8 +87,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- img/sobre.jpg: foto da equipe ou do espaço -->
-    <figure class="portrait"><div class="ph v3" id="portraitImg"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div><figcaption>Equilibrium</figcaption></figure>
+    <figure class="portrait"><img id="portraitImg" src="img/sobre.webp" alt="Reformer em primeiro plano e cadillac ao fundo, com espelhos e parede azul-turquesa" width="720" height="960" loading="lazy" decoding="async"><figcaption>Equilibrium</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Cuidado e <i>movimento</i> em Samambaia Norte.</h2>
       <p data-up>Equilibrium Fisioterapia e Pilates fica na QR 208, Conjunto 01, Lote 01/02, Samambaia Norte e tem nota 4,5 com 15 avaliações no Google.</p>
@@ -106,8 +97,8 @@
         <li><svg class="ic"><use href="icons.svg#i-clock"/></svg>Segunda a sexta, 7h–20h</li>
       </ul>
       <div class="space" data-up>
-        <!-- img/espaco-1.jpg --><div class="ph v2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
-        <!-- img/espaco-2.jpg --><div class="ph dark"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
+        <img src="img/espaco-1.webp" alt="Logotipo da Equilibrium Fisioterapia e Pilates na parede azul" width="480" height="480" loading="lazy" decoding="async">
+        <img src="img/espaco-2.webp" alt="Chair e ladder barrel em frente à parede azul-turquesa" width="480" height="480" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
