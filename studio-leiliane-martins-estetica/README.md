@@ -19,13 +19,19 @@ Prévia criada por Marcus Dantas como proposta, sem o conhecimento do negócio. 
 - **Fonte dos dados:** perfil do Google Maps, lido em 03/11/2026 (https://www.google.com/maps/place/Studio+Leiliane+Martins+Est%C3%A9tica+%7C+Samambaia+Sul+DF/data=!4m7!3m6!1s0x935a2d0017354b2b:0xeee6edf76592f4e4!8m2!3d-15.878731!4d-48.0617323!16s%2Fg%2F11xzzz8pcs!19sChIJK0s1FwAtWpMR5PSSZfft5u4)
 - **Prévia:** https://previa-studio-leiliane-martins-estetica.vercel.app
 
-## Fotos a trocar (pasta img/)
+## Fotos
 
-`img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg`. As fotos reais devem vir do próprio negócio. Detalhes em `img/LEIA-ME.txt`.
+Fotos enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (sala de atendimento, cliente na maca sob vapor de ozônio)
+- `img/sobre.webp`: seção "Sobre" (tablet com o logotipo, fonte decorativa e planta)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (máscara facial, lábios em três fotos mostradas inteiras sobre fundo desfocado, cílios e recorte das prateleiras da sala). As fileiras repetem as fotos.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio studio e que as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos reais (os espaços usam imagens ilustrativas; ver img/LEIA-ME.txt)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e valores (o perfil do Maps não informa; o site usa cards genéricos)
 - Desconto/condição e validade do Clube de aniversário (o negócio define)

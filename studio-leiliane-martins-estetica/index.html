@@ -18,6 +18,10 @@
   --paper:#ffffff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);
   --serif:"Cormorant Garamond",Georgia,serif;--serif-w:600;--sans:"Nunito Sans",system-ui,sans-serif;
 }
+.hero-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -52,8 +56,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- foto: img/hero.jpg (trocar este bloco por <img src="img/hero.jpg" alt="..."> quando o negócio enviar a foto) -->
-      <div class="hero-frame"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto do negócio</span></div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Sala de atendimento do studio, com cliente na maca sob vapor de ozônio, bancada e prateleiras de produtos" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0 no Google</b>10 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Sul</b>QS 518, Centro Comercial Lux</div></div>
     </div>
@@ -62,11 +65,11 @@
 
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
-    <h2 data-up>Um espaço para <i>cuidar de você</i>.</h2>
-    <p data-up>Espaços reservados para as fotos reais de Studio Leiliane Martins Estética. As imagens abaixo são ilustrativas.</p>
+    <h2 data-up>Alguns <i>atendimentos</i>.</h2>
+    <p data-up>Máscara facial, lábios, cílios e a sala de atendimento do Studio Leiliane Martins.</p>
   </div>
-  <div class="row" id="row1"><!-- foto: img/trabalho-1.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 1</span></div></figure><!-- foto: img/trabalho-2.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 2</span></div></figure><!-- foto: img/trabalho-3.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 3</span></div></figure><!-- foto: img/trabalho-4.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 4</span></div></figure><!-- foto: img/trabalho-5.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 5</span></div></figure></div>
-  <div class="row" id="row2"><!-- foto: img/trabalho-6.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 6</span></div></figure><!-- foto: img/trabalho-7.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 7</span></div></figure><!-- foto: img/trabalho-8.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 8</span></div></figure><!-- foto: img/trabalho-9.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 9</span></div></figure><!-- foto: img/trabalho-10.jpg --><figure class="shot"><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto de resultado 10</span></div></figure></div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cliente com máscara facial verde metalizada, ao lado do pote da máscara" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Lábios hidratados e contornados, vistos de perfil em três fotos" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Extensão de cílios volumosos, vista de perto" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Bancada e prateleiras de produtos da sala de atendimento" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -85,8 +88,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- foto: img/sobre.jpg (profissional ou fachada) -->
-    <figure class="portrait" data-up><div class="ph"><svg class="" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span>Foto do espaço</span></div><figcaption>Studio Leiliane Martins Estética</figcaption></figure>
+    <figure class="portrait" data-up><img src="img/sobre.webp" alt="Tablet com o logotipo do Studio Leiliane Martins ao lado de uma fonte decorativa e uma planta" width="720" height="960" loading="lazy" decoding="async"><figcaption>Studio Leiliane Martins Estética</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Estética de bairro em <i>Samambaia Sul</i>.</h2>
       <p data-up>Studio Leiliane Martins Estética fica em QS 518, Centro Comercial Lux, Conj. 02, Lotes 01/04, Sala 207, Samambaia Sul, e tem nota 5,0 com 10 avaliações no Google.</p>
