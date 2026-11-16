@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="style.css">
 <style>
 :root{--ink:#2a1a1f;--ink-2:#4a3138;--muted:#6e5a60;--brand:#8a3a4f;--brand-deep:#5c2433;--brand-soft:#f6e9ec;--soft:#fbf5f4;--accent:#c99a6b;--accent-soft:#f5e6d6;--on-dark:#fbeff1;--paper:#fff;--line:rgba(0,0,0,.12);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Cormorant Garamond",Georgia,serif;--serif-w:600;--sans:"DM Sans",system-ui,sans-serif}
+
+img.ph{display:block;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.space img{display:block;width:100%;height:auto;aspect-ratio:1;align-self:start;object-fit:cover;border-radius:18px}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 <script type="application/json" id="cfg">{"name": "Instituto Gislene Ferreira", "phone": "(61) 99133-2616", "hours": {"1": [[540, 1080]], "2": [[540, 1080]], "3": [[540, 1080]], "4": [[540, 1080]], "5": [[540, 1080]], "6": [[540, 1080]]}, "mapSrc": "https://www.google.com/maps?q=Instituto%20Gislene%20Ferreira%20-%20Sal%C3%A3o%20de%20Beleza%20em%20Samambaia%20QR%20408%20conjunto%2006%20lote%2016%20-%20Samambaia%20Norte%2C%20Bras%C3%ADlia%20-%20DF%2C%2072318-306&output=embed", "gaId": "", "bdayUrl": ""}</script>
 </head>
@@ -48,8 +53,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- FOTO: img/hero.jpg (foto principal do espaço ou de um trabalho, enviada pelo próprio negócio) -->
-      <div class="hero-frame"><div class="ph" role="img" aria-label="Espaço reservado para a foto principal"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></div>
+      <div class="hero-frame"><img class="ph" src="img/hero.webp" alt="Cabelo longo com mechas loiras e pontas escovadas, visto de costas no salão" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 4,8 no Google</b>84 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QR 408</div></div>
     </div>
@@ -59,22 +63,10 @@
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
     <h2 data-up>Galeria de <i>trabalhos</i>.</h2>
-    <p data-up>Espaço reservado para as fotos reais de Instituto Gislene Ferreira. Nesta prévia aparecem só ilustrações.</p>
+    <p data-up>Micropigmentação labial, unhas, sobrancelhas e mechas feitas no Instituto Gislene Ferreira.</p>
   </div>
-  <div class="row" id="row1">
-    <figure class="shot"><!-- FOTO: img/trabalho-1.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 1"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-2.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-3.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 3"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-4.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 4"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-5.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 5"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></figure>
-  </div>
-  <div class="row" id="row2">
-    <figure class="shot"><!-- FOTO: img/trabalho-6.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 6"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-7.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 7"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-8.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 8"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-9.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 9"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div></figure>
-    <figure class="shot"><!-- FOTO: img/trabalho-10.jpg --><div class="ph" role="img" aria-label="Espaço para foto de trabalho 10"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Lábios com micropigmentação em tom vermelho, com o antes em destaque no canto" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Unhas amendoadas com francesinha branca e efeito mármore com folhas douradas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Sobrancelha fio a fio desenhada, vista de perto" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Cabelo longo com mechas loiras e pontas escovadas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -99,8 +91,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- FOTO: img/sobre.jpg (retrato da profissional/equipe ou do espaço) -->
-    <figure class="portrait"><div class="ph" role="img" aria-label="Espaço reservado para a foto da equipe ou do espaço"><svg aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></div><figcaption>Instituto Gislene Ferreira</figcaption></figure>
+    <figure class="portrait"><img class="ph" src="img/sobre.webp" alt="Logotipo dourado do Instituto Gislene Ferreira sobre a foto escurecida de um salão" width="720" height="960" loading="lazy" decoding="async"><figcaption>Instituto Gislene Ferreira</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Conheça <i>Instituto Gislene Ferreira</i>.</h2>
       <p data-up>Instituto Gislene Ferreira fica em Samambaia Norte, Brasília – DF (QR 408, Conjunto 06, Lote 16). No Google, tem nota 4,8 a partir de 84 avaliações.</p>
@@ -111,9 +102,8 @@
         <li><svg class="ic"><use href="icons.svg#i-wa"/></svg>Atendimento pelo WhatsApp</li>
       </ul>
       <div class="space" data-up>
-        <!-- FOTOS: img/espaco-1.jpg e img/espaco-2.jpg -->
-        <div class="ph" role="img" aria-label="Espaço reservado para foto do ambiente 1"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
-        <div class="ph" role="img" aria-label="Espaço reservado para foto do ambiente 2"><svg aria-hidden="true"><use href="icons.svg#i-image"/></svg></div>
+        <img src="img/espaco-1.webp" alt="Monograma dourado GF do Instituto Gislene Ferreira" width="480" height="480" loading="lazy" decoding="async">
+        <img src="img/espaco-2.webp" alt="Sobrancelha fio a fio, vista de perto" width="480" height="480" loading="lazy" decoding="async">
       </div>
     </div>
   </div>

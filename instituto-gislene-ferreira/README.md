@@ -33,14 +33,24 @@
 - `vercel.json` (CSP com `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
 - `img/LEIA-ME.txt` (quais fotos trocar)
 
-## Fotos a trocar (em `img/`)
+## Fotos
 
-Todas: `hero.jpg`, `sobre.jpg`, `espaco-1.jpg`, `espaco-2.jpg`, `trabalho-1.jpg` a `trabalho-10.jpg`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (mechas loiras; print do Instagram sem a barra de cima; pessoas ao fundo desfocadas)
+- `img/sobre.webp`: seção "Conheça" (logo dourado sobre foto escura de salão, inteiro sobre fundo desfocado)
+- `img/espaco-1.webp` e `img/espaco-2.webp`: recorte do monograma GF e da sobrancelha (não há fotos do ambiente; trocar quando houver)
+- `img/trabalho-1.webp` a `img/trabalho-4.webp`: galeria (micropigmentação labial com o antes no canto, unhas, sobrancelha fio a fio e mechas). As fileiras repetem as fotos.
+
+A imagem do logo tem ao fundo uma foto de salão que pode ser de banco de imagens; confirme se é o espaço do instituto.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio instituto e que as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
 - Lista de serviços e valores (os cards apenas levam ao WhatsApp; nenhum serviço foi inventado)
-- Fotos reais
+- Fotos do ambiente
 - CNPJ (comentário reservado na política de privacidade)
 - Instagram/@ oficial (não foi copiado do perfil)
 - Confirmar se o telefone do perfil é WhatsApp
