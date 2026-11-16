@@ -1,0 +1,13 @@
+Fotos de Luana Sales – Estética Facial
+====================
+
+Nesta prévia, todos os espaços de foto usam imagens ilustrativas (gradientes e ícones).
+As fotos reais devem ser enviadas pelo próprio negócio. Não use fotos do Google, do Instagram ou de outras redes sem autorização.
+
+Arquivos esperados nesta pasta:
+- img/hero.jpg       -> foto principal do topo (vertical, 4:5)
+- img/sobre.jpg      -> foto do espaço ou da profissional (vertical, 3:4)
+- img/trabalho-1.jpg a img/trabalho-10.jpg -> galeria (vertical, 3:4)
+
+No index.html, cada espaço tem um comentário <!-- foto: img/... --> indicando o arquivo.
+Ao receber as fotos, troque o bloco ilustrativo por <img src="img/..." alt="descrição" loading="lazy">.
