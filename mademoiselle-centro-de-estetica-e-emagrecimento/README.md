@@ -15,13 +15,22 @@ Prévia criada por Marcus Dantas como **proposta**. Não é o site oficial do ne
 
 **Fonte dos dados:** perfil público do Google Maps, lido em 28 de outubro de 2026. Só foram usados nome, categoria, endereço, telefone, horários, nota e número de avaliações. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos
 
-Todos os espaços de foto usam ilustrações neutras. As fotos reais devem vir do próprio negócio: `img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg` (detalhes em `img/LEIA-ME.txt`; cada espaço tem um comentário `FOTO:` no `index.html`).
+Fotos enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (profissional mostrando um cleanser de limpeza facial)
+- `img/sobre.webp`: seção "Sobre" (fachada com a placa e a porta de entrada)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (máscara facial dourada, extração na limpeza de pele e o logotipo). As fileiras repetem as fotos.
+
+A placa da fachada mostra o telefone (61) 3975-6426 e o Instagram @centro.mademoiselle, que ainda não estão no site.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio centro e que as clientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos (todas ilustrativas).
+- Fotos do ambiente interno
 - Lista de procedimentos e valores (o perfil não informa; a página não lista serviços).
 - Instagram, CNPJ e número de conjunto/lote (o perfil só informa QS 518).
 - O perfil traz só um telefone celular, (61) 99177-7114; confirmar se é WhatsApp.
