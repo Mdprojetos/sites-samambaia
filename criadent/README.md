@@ -13,15 +13,24 @@ Prévia criada por Marcus Dantas como **proposta**. Não é o site oficial do ne
 | Nota no Google | 4,0 (72 avaliações) |
 | Prévia | https://previa-criadent.vercel.app |
 
-**Fonte dos dados:** perfil público do Google Maps, lido em 28 de outubro de 2026. Só foram usados nome, categoria, endereço, telefone, horários, nota e número de avaliações. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
+**Fonte dos dados:** perfil público do Google Maps, lido em 28 de outubro de 2026. Só foram usados nome, categoria, endereço, telefone, horários, nota e número de avaliações. Nenhum texto de avaliação ou nome de cliente foi copiado; as fotos foram enviadas por Marcus Dantas.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos (pasta `img/`)
 
-Todos os espaços de foto usam ilustrações neutras. As fotos reais devem vir do próprio negócio: `img/hero.jpg`, `img/sobre.jpg` e `img/trabalho-1.jpg` a `img/trabalho-10.jpg` (detalhes em `img/LEIA-ME.txt`; cada espaço tem um comentário `FOTO:` no `index.html`).
+Fotos enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (sala de espera com cadeiras pretas e o logotipo na parede)
+- `img/sobre.webp`: seção "Sobre" (recepção com o letreiro Odontologia Especializada)
+- `img/trabalho-1.webp`: consultório com a cadeira odontológica
+- `img/trabalho-2.webp`: sala de espera com poltronas e mesinha de brinquedos (rosto da recepcionista desfocado)
+- `img/trabalho-3.webp`: letreiro da CriaDent (recorte da foto da recepção)
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são da própria clínica.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## Dados que faltaram
 
-- Fotos (todas ilustrativas).
 - Tratamentos e valores (o perfil não informa; a página não lista serviços).
 - Responsável técnico e número do CRO (obrigatórios em divulgação odontológica), Instagram e CNPJ.
 - Confirmar se (61) 99292-8979 é WhatsApp.

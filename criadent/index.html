@@ -20,6 +20,10 @@
   --frame-radius:18px;
   --serif:"Lora",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;--serif-w:500;
 }
+.hero-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -56,7 +60,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <div class="hero-frame"><!-- FOTO: trocar por <img src="img/hero.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto principal</span></div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Sala de espera da CriaDent com cadeiras pretas, recepção e o logotipo na parede de madeira geométrica" width="960" height="1200" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 4,0 no Google</b>72 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia</b>QN 310 · Sala 102</div></div>
     </div>
@@ -65,22 +69,22 @@
 
 <section class="gal" id="galeria" aria-label="Galeria de fotos">
   <div class="wrap head">
-    <h2 data-up>Fotos <i>em breve</i>.</h2>
-    <p data-up>Espaço reservado para as fotos do ambiente e dos atendimentos, que serão enviadas pela própria CriaDent.</p>
+    <h2 data-up>Conheça a <i>clínica</i>.</h2>
+    <p data-up>Recepção, sala de espera e consultório da CriaDent, na QN 310.</p>
   </div>
   <div class="row" id="row1">
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-1.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 1</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-2.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 2</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-3.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 3</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-4.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 4</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-5.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 5</span></div></figure>
+    <figure class="shot"><img src="img/trabalho-1.webp" alt="Consultório com cadeira odontológica, bancada e janela" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot"><img src="img/trabalho-2.webp" alt="Sala de espera com poltronas, televisão, quadros e uma mesinha com brinquedos para crianças" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot"><img src="img/trabalho-3.webp" alt="Letreiro da CriaDent Odontologia Especializada na parede da recepção" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
   </div>
   <div class="row" id="row2">
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-6.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 6</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-7.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 7</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-8.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 8</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-9.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 9</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-10.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto 10</span></div></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -100,7 +104,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <figure class="portrait"><!-- FOTO: trocar por <img src="img/sobre.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-tooth"/></svg><span>Foto do espaço ou da equipe</span></div><figcaption>CriaDent</figcaption></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Recepção da CriaDent com o letreiro Odontologia Especializada na parede" width="800" height="1000" loading="lazy" decoding="async"><figcaption>CriaDent</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Atendimento na <i>QN 310</i>.</h2>
       <p data-up>A CriaDent é uma clínica odontológica em Samambaia, na sala 102 da QN 310, com nota 4,0 em 72 avaliações no Google. Atende de segunda a sexta, das 9h às 12h e das 13h às 17h, e aos sábados, das 9h às 12h. Para saber tratamentos e valores, é só chamar no WhatsApp.</p>
