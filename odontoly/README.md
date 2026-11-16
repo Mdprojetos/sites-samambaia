@@ -26,9 +26,22 @@
 - `privacidade.html` (LGPD), `vercel.json` (CSP, `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
 - `img/` → fotos a trocar (ver `img/LEIA-ME.txt`). As imagens atuais são ilustrações neutras em CSS.
 
+## Fotos
+
+Fotos enviadas por Marcus Dantas em 16 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+- `img/hero.webp`: topo (a dentista sorrindo no consultório)
+- `img/sobre.webp`: seção "Sobre" (outro recorte da mesma foto)
+- `img/trabalho-1.webp` e `img/trabalho-2.webp`: galeria (sorriso em duas fotos lado a lado, mostrado inteiro sobre fundo desfocado; sorriso com prótese, recortado sem os olhos da paciente). As fileiras repetem as fotos.
+
+Duas imagens enviadas NÃO foram usadas: a do implante (ilustração com lupa) e a do aparelho ortodôntico. Apesar do logotipo da Odontoly, parecem imagens de banco de imagens, e não atendimentos do consultório.
+
+Antes de mostrar a prévia ao negócio, confirme que as fotos são do próprio consultório e que os pacientes autorizam o uso.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
+
 ## O que faltou
 
-- fotos reais (hero, sobre e galeria: ver img/LEIA-ME.txt)
+- fotos do consultório e mais fotos de resultados (só vieram 2 de pacientes)
 - lista de serviços e valores (o perfil do Google não informa; o site só cita o que aparece no nome/categoria do perfil)
 - CNPJ (política de privacidade)
 - Instagram/redes (não incluídos)
