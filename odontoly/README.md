@@ -24,7 +24,7 @@
 
 - `index.html` (dados e cores do negócio), `style.css`, `site.js`, `icons.svg` (compartilhados entre as prévias)
 - `privacidade.html` (LGPD), `vercel.json` (CSP, `frame-src https://www.google.com`, `X-Robots-Tag: noindex`)
-- `img/` → fotos a trocar (ver `img/LEIA-ME.txt`). As imagens atuais são ilustrações neutras em CSS.
+- `img/` → fotos do site (ver `img/LEIA-ME.txt`)
 
 ## Fotos
 
