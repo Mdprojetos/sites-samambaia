@@ -17,6 +17,8 @@
   --radius:24px;--ease:cubic-bezier(.16,1,.3,1);
   --serif:"DM Serif Display",Georgia,serif;--sans:"Outfit",system-ui,sans-serif;
 }
+.hero-frame img,.portrait img,.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -54,7 +56,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <div class="hero-frame"><!-- FOTO: substituir por <img src="img/hero.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto principal</span></div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Sala do BLU Studio Pilates com cadillac, reformer, ladder barrel e parede verde" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0</b>29 avaliações no Google</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>QS 408</div></div>
     </div>
@@ -63,11 +65,11 @@
 
 <section class="gallery" id="fotos" aria-label="Fotos">
   <div class="wrap head">
-    <h2 data-up>Espaço para as <i>fotos</i> do estúdio.</h2>
-    <p data-up>Nesta prévia, as fotos são ilustrações. No site final, entram fotos reais enviadas por BLU Studio Pilates.</p>
+    <h2 data-up>Conheça o <i>estúdio</i>.</h2>
+    <p data-up>Cadillac, reformer, chairs e ladder barrel na sala 304 da QS 408.</p>
   </div>
-  <div class="row" id="row1"><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-1.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 1</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-2.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 2</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-3.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 3</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-4.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 4</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-5.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 5</span></div></figure></div>
-  <div class="row" id="row2"><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-6.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 6</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-7.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 7</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-8.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 8</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-9.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 9</span></div></figure><figure class="shot"><!-- FOTO: substituir por <img src="img/trabalho-10.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto 10</span></div></figure></div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cadillac, chairs e bolas ao lado da porta de vidro da varanda" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Ladder barrel, cadillac e molas na parede, com o espelho ao fundo" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Logotipo do BLU Studio Pilates" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section steps-sec" id="como">
@@ -86,7 +88,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <figure class="portrait" data-up><!-- FOTO: substituir por <img src="img/sobre.jpg" alt="..."> (foto enviada pelo próprio negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg aria-hidden="true"><use href="icons.svg#i-wave"/></svg><span class="ph-label">Foto do espaço ou da equipe</span></div></figure>
+    <figure class="portrait" data-up><img src="img/sobre.webp" alt="Cadillac e reformer em frente à parede verde e ao espelho do estúdio" width="720" height="900" loading="lazy" decoding="async"></figure>
     <div class="about-text">
       <h2 data-up>BLU Studio Pilates, <i>em Samambaia Norte</i>.</h2>
       <p data-up>BLU Studio Pilates é um estúdio de pilates em Samambaia Norte, Brasília – DF, com nota 5,0 em 29 avaliações no Google.</p>
