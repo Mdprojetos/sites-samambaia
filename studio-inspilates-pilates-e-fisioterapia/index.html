@@ -20,6 +20,10 @@
   --frame-radius:200px 200px 22px 22px;
   --serif:"Young Serif",Georgia,serif;--sans:"Nunito Sans",system-ui,sans-serif;--serif-w:400;
 }
+.hero-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 </head>
 <body>
@@ -55,7 +59,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <div class="hero-frame"><!-- FOTO: trocar por <img src="img/hero.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto principal</span></div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Alunas fazendo acrobacias no cadillac na comemoração de 1 ano do Studio Inspilates, com a instrutora sorrindo à frente" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0 no Google</b>15 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia</b>QS 110 · Centro Clínico One</div></div>
     </div>
@@ -64,22 +68,22 @@
 
 <section class="gal" id="galeria" aria-label="Galeria de fotos">
   <div class="wrap head">
-    <h2 data-up>Fotos <i>em breve</i>.</h2>
-    <p data-up>Espaço reservado para as fotos do ambiente e dos atendimentos, que serão enviadas pelo próprio Studio Inspilates.</p>
+    <h2 data-up>Conheça o <i>estúdio</i>.</h2>
+    <p data-up>Aulas no cadillac, o mural do estúdio e a entrada do Studio Inspilates.</p>
   </div>
   <div class="row" id="row1">
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-1.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 1</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-2.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 2</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-3.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 3</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-4.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 4</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-5.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 5</span></div></figure>
+    <figure class="shot"><img src="img/trabalho-1.webp" alt="Três alunas em exercício de grupo no cadillac, com o mural do estúdio ao fundo" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot"><img src="img/trabalho-2.webp" alt="Porta de vidro do Studio Inspilates com o logotipo e a frase Viva sem dor, pratique pilates" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot"><img src="img/trabalho-3.webp" alt="Aluna arqueada sobre a bola presa ao cadillac" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
   </div>
   <div class="row" id="row2">
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-6.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 6</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-7.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 7</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-8.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 8</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-9.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 9</span></div></figure>
-    <figure class="shot"><!-- FOTO: trocar por <img src="img/trabalho-10.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto 10</span></div></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -99,7 +103,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <figure class="portrait"><!-- FOTO: trocar por <img src="img/sobre.jpg" alt="..."> (foto real enviada pelo negócio) --><div class="ph" role="img" aria-label="Espaço reservado para foto"><svg><use href="icons.svg#i-body"/></svg><span>Foto do espaço ou da equipe</span></div><figcaption>Studio Inspilates</figcaption></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Aluna arqueada sobre a bola no cadillac, com o mural do Inspilates ao fundo" width="800" height="1000" loading="lazy" decoding="async"><figcaption>Studio Inspilates</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Movimento com <i>cuidado</i>.</h2>
       <p data-up>O Studio Inspilates é um estúdio de pilates e fisioterapia em Samambaia, nas salas 509/510 do Centro Clínico One (QS 110), avaliado com nota 5,0 por 15 pessoas no Google. Para saber modalidades, horários de aula e valores, é só chamar no WhatsApp.</p>
