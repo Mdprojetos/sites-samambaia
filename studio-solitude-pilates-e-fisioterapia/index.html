@@ -27,6 +27,11 @@
   --serif:"Lora",Georgia,serif;
   --sans:"Nunito Sans",system-ui,sans-serif;
 }
+.hero-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.shot{overflow:hidden}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.no-gsap .shot[aria-hidden="true"]{display:none}
 </style>
 <link rel="stylesheet" href="app.css">
 </head>
@@ -62,8 +67,7 @@
       </div>
     </div>
     <div class="hero-visual" data-hero>
-      <!-- FOTO: img/hero.jpg (foto do espaço ou de um trabalho, enviada pelo negócio). Troque o .ph por <img src="img/hero.jpg" alt="..."> -->
-      <div class="hero-frame"><div class="ph"><svg><use href="icons.svg#i-body"/></svg>Espaço reservado para a foto principal</div></div>
+      <div class="hero-frame"><img src="img/hero.webp" alt="Sala do Studio Solitude com cadillac, reformer, ladder barrel, espelho e recepção ao fundo" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>Nota 5,0</b>40 avaliações no Google</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia – DF</b>QS 110, Conj. 6, ONE Centro Clínico</div></div>
     </div>
@@ -72,23 +76,11 @@
 
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
-    <h2 data-up>Espaço para fotos do <i>studio</i>.</h2>
-    <p data-up>Nesta prévia, os quadros abaixo são ilustrativos. As fotos reais entram aqui quando o studio enviar.</p>
+    <h2 data-up>Conheça o <i>studio</i>.</h2>
+    <p data-up>Aparelhos de pilates, a recepção e a marca do Studio Solitude.</p>
   </div>
-  <div class="row" id="row1">
-    <!-- FOTO: img/trabalho-1.jpg (enviar foto real do negócio) --><figure class="shot t2" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-2.jpg (enviar foto real do negócio) --><figure class="shot t3" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-3.jpg (enviar foto real do negócio) --><figure class="shot t4" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-4.jpg (enviar foto real do negócio) --><figure class="shot t1" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-5.jpg (enviar foto real do negócio) --><figure class="shot t2" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-  </div>
-  <div class="row" id="row2">
-    <!-- FOTO: img/trabalho-6.jpg (enviar foto real do negócio) --><figure class="shot t3" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-7.jpg (enviar foto real do negócio) --><figure class="shot t4" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-8.jpg (enviar foto real do negócio) --><figure class="shot t1" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-9.jpg (enviar foto real do negócio) --><figure class="shot t2" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-    <!-- FOTO: img/trabalho-10.jpg (enviar foto real do negócio) --><figure class="shot t3" aria-hidden="true"><svg class="ic"><use href="icons.svg#i-img"/></svg></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Reformer, ladder barrel e cadillac em frente à janela" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Reformer da linha Infinity em primeiro plano, com bolas coloridas na parede" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Logotipo do Studio Solitude Pilates e Fisioterapia" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section svc" id="servicos">
@@ -108,8 +100,7 @@
 
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
-    <!-- FOTO: img/espaco.jpg (foto do ambiente ou da equipe) -->
-    <figure class="portrait"><svg class="ic"><use href="icons.svg#i-img"/></svg><figcaption>Studio Solitude</figcaption></figure>
+    <figure class="portrait"><img src="img/espaco.webp" alt="Recepção com balcão branco, poltronas claras e quadros na parede" width="720" height="960" loading="lazy" decoding="async"><figcaption>Studio Solitude</figcaption></figure>
     <div class="about-text">
       <h2 data-up>Estúdio de pilates em <i>Samambaia</i>.</h2>
       <p data-up>Studio Solitude - Pilates e Fisioterapia fica em QS 110, Conj. 6, ONE Centro Clínico, Lote 4/5, Salas 405 e 406, em Samambaia – DF. O studio tem nota 5,0 no Google, com 40 avaliações.</p>
