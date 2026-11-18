@@ -1,12 +1,7 @@
-Fotos de Gabriela Nascimento estética facial
+Fotos da Gabriela Nascimento Estética Facial (enviadas em 18/11/2026)
 
-Nesta prévia todos os espaços de foto usam imagens ilustrativas (gradientes e ícones).
-Nenhuma foto foi copiada do Google, do Instagram ou de outra rede do negócio.
-As fotos reais devem ser enviadas pelo próprio negócio e salvas nesta pasta com estes nomes:
+  img/hero.webp          topo (4:5, 800 x 1000 px)
+  img/sobre.webp         seção "Sobre" (3:4, 720 x 960 px)
+  img/trabalho-1.webp ... img/trabalho-4.webp   galeria (3:4, 480 x 640 px)
 
-  img/hero.jpg          foto principal (topo do site), vertical 4:5
-  img/sobre.jpg         foto do espaço ou da equipe (seção "Sobre"), vertical 3:4
-  img/trabalho-1.jpg    ... até img/trabalho-10.jpg: fotos de trabalhos (galeria), verticais 3:4
-
-No index.html, cada espaço tem um comentário <!-- foto: img/... --> indicando o arquivo.
-Para usar a foto, troque o bloco "ph" por <img src="img/arquivo.jpg" alt="descrição">.
+Para trocar uma foto, salve a nova com o mesmo nome e no mesmo formato.
