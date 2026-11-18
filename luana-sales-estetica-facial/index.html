@@ -10,7 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>:root{--ink:#1b1c33;--ink-2:#363856;--muted:#5d5f7a;--brand:#565a9c;--brand-deep:#24274f;--brand-soft:#ecedf7;--bg:#f7f7fc;--accent:#e3a6a1;--accent-soft:#f8e4e2;--on-deep:#f1f1fb;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Bodoni Moda",Georgia,serif;--serif-w:500;--sans:"Karla",system-ui,sans-serif}</style>
+<style>:root{--ink:#1b1c33;--ink-2:#363856;--muted:#5d5f7a;--brand:#565a9c;--brand-deep:#24274f;--brand-soft:#ecedf7;--bg:#f7f7fc;--accent:#e3a6a1;--accent-soft:#f8e4e2;--on-deep:#f1f1fb;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Bodoni Moda",Georgia,serif;--serif-w:500;--sans:"Karla",system-ui,sans-serif}.frame img,.portrait img,.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait,.shot{overflow:hidden}
+.no-gsap .shot[aria-hidden="true"]{display:none}
+</style>
 </head>
 <body>
 
@@ -46,7 +49,7 @@
     </div>
     <div class="hero-visual" data-hero>
       <!-- foto principal: img/hero.jpg (enviada pelo próprio negócio) -->
-      <div class="frame ph" role="img" aria-label="Espaço reservado para a foto principal de Luana Sales – Estética Facial"><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg><span class="ph-note">Foto do negócio aqui</span></div>
+      <div class="frame"><img src="img/hero.webp" alt="Esteticista fazendo um tratamento facial com aparelho em uma cliente deitada na maca" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>5,0 no Google</b>76 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>Brasília – DF</div></div>
     </div>
@@ -55,23 +58,11 @@
 
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
-    <h2 data-up>Espaço para os <i>trabalhos</i> do dia a dia.</h2>
-    <p data-up>Nesta prévia, as imagens são ilustrativas. As fotos reais entram aqui quando Luana Sales – Estética Facial enviar.</p>
+    <h2 data-up>Os <i>cuidados</i> do dia a dia.</h2>
+    <p data-up>Limpeza de pele, LED e outros tratamentos faciais, com tempo para um café antes do atendimento.</p>
   </div>
-  <div class="row" id="row1">
-    <figure class="shot ph"><!-- foto: img/trabalho-1.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-2.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-3.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-4.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-5.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-  </div>
-  <div class="row" id="row2">
-    <figure class="shot ph"><!-- foto: img/trabalho-6.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-7.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-8.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-9.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-10.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-face"/></svg></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Tratamento facial com luz de LED, com a cliente usando óculos de proteção" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Cliente relaxando na maca durante a limpeza de pele, sob a lupa de luz" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Cliente tomando um café no espaço, de roupão, antes do atendimento" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Esteticista aplicando aparelho no rosto de uma cliente" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section steps-sec" id="como-agendar">
@@ -91,7 +82,7 @@
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
     <!-- foto: img/sobre.jpg (profissional ou espaço) -->
-    <figure class="portrait ph" role="img" aria-label="Espaço reservado para foto do espaço ou da profissional"><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span class="ph-note">Foto do espaço aqui</span></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Profissional de jaleco branco na sala de atendimento, apoiada na maca sob a lupa de luz" width="720" height="960" loading="lazy" decoding="async"></figure>
     <div class="about-text">
       <h2 data-up>Luana Sales – Estética Facial, em <i>Samambaia Norte</i>.</h2>
       <p data-up>Luana Sales – Estética Facial aparece no Google como esteticista, com nota 5,0 em 76 avaliações. Fica em Edifício Vista Life Center – Samambaia Norte, Brasília – DF, 72322-582.</p>

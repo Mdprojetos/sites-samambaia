@@ -22,13 +22,23 @@
 
 Perfil público do negócio no Google Maps, consultado em 16/11/2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos (pasta `img/`)
 
-Veja `img/LEIA-ME.txt`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 18 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (esteticista atendendo uma cliente na maca)
+- `img/sobre.webp`: seção "Sobre" (profissional de jaleco na sala de atendimento)
+- `img/trabalho-1.webp`: galeria (tratamento com LED)
+- `img/trabalho-2.webp`: galeria (cliente na maca durante a limpeza de pele)
+- `img/trabalho-3.webp`: galeria (cliente tomando café no espaço)
+- `img/trabalho-4.webp`: galeria (recorte da foto do topo)
+
+As fotos mostram rostos de clientes que posaram para o espaço. Confirme com a Luana que elas autorizam o uso. Na foto da maca aparece o braço e a perna de uma pessoa no canto; o recorte da galeria tirou quase tudo, sem rosto.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
 
-- Fotos reais (todos os espaços de foto estão com imagens ilustrativas)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e preços (não informada no perfil; não foi inventada)
 - Instagram (não informado no perfil do Google)
