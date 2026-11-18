@@ -10,7 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>:root{--ink:#2a1712;--ink-2:#4d332b;--muted:#725a52;--brand:#a84a32;--brand-deep:#4a1f14;--brand-soft:#f8e9e2;--bg:#fdf7f3;--accent:#e2b65c;--accent-soft:#f7ebcf;--on-deep:#fdf1ec;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Cormorant Garamond",Georgia,serif;--serif-w:600;--sans:"Outfit",system-ui,sans-serif}</style>
+<style>:root{--ink:#2a1712;--ink-2:#4d332b;--muted:#725a52;--brand:#a84a32;--brand-deep:#4a1f14;--brand-soft:#f8e9e2;--bg:#fdf7f3;--accent:#e2b65c;--accent-soft:#f7ebcf;--on-deep:#fdf1ec;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Cormorant Garamond",Georgia,serif;--serif-w:600;--sans:"Outfit",system-ui,sans-serif}.frame img,.portrait img,.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait,.shot{overflow:hidden}
+.no-gsap .shot[aria-hidden="true"]{display:none}
+</style>
 </head>
 <body>
 
@@ -46,7 +49,7 @@
     </div>
     <div class="hero-visual" data-hero>
       <!-- foto principal: img/hero.jpg (enviada pelo próprio negócio) -->
-      <div class="frame ph" role="img" aria-label="Espaço reservado para a foto principal de Priscila Cardoso – Salão Outra Face"><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg><span class="ph-note">Foto do negócio aqui</span></div>
+      <div class="frame"><img src="img/hero.webp" alt="Cliente de costas com cabelo loiro em ondas, em frente ao painel com o logotipo do Salão Outra Face" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>4,8 no Google</b>35 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Sul</b>Brasília – DF</div></div>
     </div>
@@ -55,23 +58,11 @@
 
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
-    <h2 data-up>Espaço para os <i>trabalhos</i> do dia a dia.</h2>
-    <p data-up>Nesta prévia, as imagens são ilustrativas. As fotos reais entram aqui quando Priscila Cardoso – Salão Outra Face enviar.</p>
+    <h2 data-up>Os <i>trabalhos</i> do dia a dia.</h2>
+    <p data-up>Cachos, ondas e mechas feitos no salão, e a fachada para você chegar sem erro.</p>
   </div>
-  <div class="row" id="row1">
-    <figure class="shot ph"><!-- foto: img/trabalho-1.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-2.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-3.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-4.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-5.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-  </div>
-  <div class="row" id="row2">
-    <figure class="shot ph"><!-- foto: img/trabalho-6.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-7.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-8.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-9.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-10.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cabelo cacheado longo em tom acobreado, visto de costas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Cabelo com mechas douradas em ondas, visto de costas diante do jardim vertical" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Cabelo loiro com ondas largas, visto de costas" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Fachada do Salão Outra Face, com a placa roxa e a porta de vidro" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section steps-sec" id="como-agendar">
@@ -91,7 +82,7 @@
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
     <!-- foto: img/sobre.jpg (profissional ou espaço) -->
-    <figure class="portrait ph" role="img" aria-label="Espaço reservado para foto do espaço ou da profissional"><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span class="ph-note">Foto do espaço aqui</span></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Profissional do Salão Outra Face finalizando os cachos de uma cliente, com o painel do salão ao fundo" width="720" height="960" loading="lazy" decoding="async"></figure>
     <div class="about-text">
       <h2 data-up>Priscila Cardoso – Salão Outra Face, em <i>Samambaia Sul</i>.</h2>
       <p data-up>Priscila Cardoso – Salão Outra Face aparece no Google como salão de beleza, com nota 4,8 em 35 avaliações. Fica em QS 112 – Samambaia, Brasília – DF, 72302-540.</p>

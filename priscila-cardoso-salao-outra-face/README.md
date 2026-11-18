@@ -22,16 +22,26 @@
 
 Perfil público do negócio no Google Maps, consultado em 16/11/2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos (pasta `img/`)
 
-Veja `img/LEIA-ME.txt`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 18 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (cabelo loiro em ondas, diante do painel com o logotipo)
+- `img/sobre.webp`: seção "Sobre" (profissional finalizando os cachos de uma cliente; a foto original estava espelhada e foi desvirada para o letreiro ficar legível)
+- `img/trabalho-1.webp` a `img/trabalho-3.webp`: galeria (cachos, mechas e ondas)
+- `img/trabalho-4.webp`: galeria (fachada do salão)
+
+A foto da seção "Sobre" mostra o rosto de uma cliente, que posou para a foto. Confirme com o salão que ela autoriza o uso. Na fachada aparece um carro estacionado, sem placa visível.
+
+A placa da fachada mostra o Instagram @salaooutraface e um endereço diferente do perfil do Google (QR 333, Conjunto C, lote 7, Avenida 300/302?). Confirme o endereço atual com o salão antes de publicar.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
 
-- Fotos reais (todos os espaços de foto estão com imagens ilustrativas)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e preços (não informada no perfil; não foi inventada)
-- Instagram (não informado no perfil do Google)
+- Instagram: não informado no perfil do Google; a placa da fachada mostra @salaooutraface (ainda não adicionado ao site)
 - Desconto/condição especial e validade do Clube de aniversário (definir com o negócio)
 
 ## Clube de aniversário
