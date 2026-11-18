@@ -6,6 +6,7 @@
 - **Bairro:** Samambaia Sul
 - **Endereço:** QS 112 – Samambaia, Brasília – DF, 72302-540
 - **Telefone/WhatsApp:** (61) 98612-9021 — número de celular do perfil (presume-se WhatsApp)
+- **Instagram:** @salaooutraface (visto na placa da fachada; adicionado ao site em 18/11/2026)
 - **Nota no Google:** 4,8 (35 avaliações)
 
 ## Horários (perfil do Google)
@@ -33,7 +34,7 @@ Fotos enviadas por Marcus Dantas em 18 de novembro de 2026 (formato WebP, já re
 
 A foto da seção "Sobre" mostra o rosto de uma cliente, que posou para a foto. Confirme com o salão que ela autoriza o uso. Na fachada aparece um carro estacionado, sem placa visível.
 
-A placa da fachada mostra o Instagram @salaooutraface e um endereço diferente do perfil do Google (QR 333, Conjunto C, lote 7, Avenida 300/302?). Confirme o endereço atual com o salão antes de publicar.
+A placa da fachada mostra o Instagram @salaooutraface (já colocado no site) e um endereço diferente do perfil do Google (QR 333, Conjunto C, lote 7, Avenida 300/302?). Confirme o endereço atual com o salão antes de publicar.
 
 Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
@@ -41,7 +42,6 @@ Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo
 
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e preços (não informada no perfil; não foi inventada)
-- Instagram: não informado no perfil do Google; a placa da fachada mostra @salaooutraface (ainda não adicionado ao site)
 - Desconto/condição especial e validade do Clube de aniversário (definir com o negócio)
 
 ## Clube de aniversário
