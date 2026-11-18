@@ -1,0 +1,16 @@
+Fotos do negócio
+================
+
+Nesta prévia, todos os espaços de foto mostram ilustrações neutras (gradientes e ícones).
+Nenhuma foto foi copiada do Google, do Instagram ou de outra rede do negócio.
+As fotos reais devem vir do próprio negócio, com autorização de uso.
+
+Arquivos que entram nesta pasta (formato .jpg, de preferência até 300 KB cada):
+
+- hero.jpg ............ foto principal do topo (vertical, 4:5)
+- sobre.jpg ........... foto do espaço ou da equipe (vertical, 3:4)
+- trabalho-1.jpg ... trabalho-10.jpg ... galeria (vertical, 3:4)
+
+No index.html, cada espaço tem um comentário <!-- FOTO: img/arquivo.jpg ... --> dizendo
+qual arquivo entra ali. Basta trocar o bloco <div class="ph">...</div> por
+<img src="img/arquivo.jpg" alt="descrição da foto">.
