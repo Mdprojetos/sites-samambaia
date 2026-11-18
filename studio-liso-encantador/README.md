@@ -22,13 +22,20 @@
 
 Perfil público do negócio no Google Maps, consultado em 16/11/2026. Nenhum texto de avaliação, nome de cliente ou foto foi copiado.
 
-## Fotos a trocar (pasta `img/`)
+## Fotos (pasta `img/`)
 
-Veja `img/LEIA-ME.txt`. As fotos reais devem vir do próprio negócio.
+Fotos enviadas por Marcus Dantas em 18 de novembro de 2026 (formato WebP, já reduzidas para carregar rápido no celular):
+
+- `img/hero.webp`: topo (cabelo escuro liso com brilho azulado)
+- `img/sobre.webp`: seção "Sobre" (cabelo castanho liso na cadeira do salão)
+- `img/trabalho-1.webp` a `img/trabalho-5.webp`: galeria com resultados de alisamento
+
+Nenhuma foto mostra rosto de cliente. Confirme com o salão que as clientes autorizam o uso das imagens. Duas fotos (trabalho-2 e trabalho-5) têm um fundo diferente das demais; confirme que também são do salão.
+
+Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
 ## O que faltou
 
-- Fotos reais (todos os espaços de foto estão com imagens ilustrativas)
 - CNPJ (comentário reservado em privacidade.html)
 - Lista de serviços e preços (não informada no perfil; não foi inventada)
 - Instagram (não informado no perfil do Google)

@@ -10,7 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>:root{--ink:#24141e;--ink-2:#47303d;--muted:#6c5864;--brand:#7a2e5c;--brand-deep:#3f1430;--brand-soft:#f6e8f0;--bg:#fcf6f9;--accent:#d9a05b;--accent-soft:#f6e6cf;--on-deep:#fbeff5;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Playfair Display",Georgia,serif;--serif-w:500;--sans:"DM Sans",system-ui,sans-serif}</style>
+<style>:root{--ink:#24141e;--ink-2:#47303d;--muted:#6c5864;--brand:#7a2e5c;--brand-deep:#3f1430;--brand-soft:#f6e8f0;--bg:#fcf6f9;--accent:#d9a05b;--accent-soft:#f6e6cf;--on-deep:#fbeff5;--paper:#fff;--line:rgba(0,0,0,.11);--radius:24px;--ease:cubic-bezier(.16,1,.3,1);--serif:"Playfair Display",Georgia,serif;--serif-w:500;--sans:"DM Sans",system-ui,sans-serif}.frame img,.portrait img,.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.portrait,.shot{overflow:hidden}
+.no-gsap .shot[aria-hidden="true"]{display:none}
+</style>
 </head>
 <body>
 
@@ -46,7 +49,7 @@
     </div>
     <div class="hero-visual" data-hero>
       <!-- foto principal: img/hero.jpg (enviada pelo próprio negócio) -->
-      <div class="frame ph" role="img" aria-label="Espaço reservado para a foto principal de Studio Liso Encantador"><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg><span class="ph-note">Foto do negócio aqui</span></div>
+      <div class="frame"><img src="img/hero.webp" alt="Cabelo longo, liso e escuro, com brilho, penteado logo após o alisamento" width="800" height="1000" fetchpriority="high"></div>
       <div class="float-card f2"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-star"/></svg></span><div><b>5,0 no Google</b>42 avaliações</div></div>
       <div class="float-card"><span class="ic-wrap"><svg class="ic"><use href="icons.svg#i-pin"/></svg></span><div><b>Samambaia Norte</b>Brasília – DF</div></div>
     </div>
@@ -55,23 +58,11 @@
 
 <section class="gallery" id="galeria" aria-label="Galeria">
   <div class="wrap head">
-    <h2 data-up>Espaço para os <i>trabalhos</i> do dia a dia.</h2>
-    <p data-up>Nesta prévia, as imagens são ilustrativas. As fotos reais entram aqui quando Studio Liso Encantador enviar.</p>
+    <h2 data-up>Os <i>trabalhos</i> do dia a dia.</h2>
+    <p data-up>Resultados de alisamentos feitos no salão: fios lisos, alinhados e com brilho.</p>
   </div>
-  <div class="row" id="row1">
-    <figure class="shot ph"><!-- foto: img/trabalho-1.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-2.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-3.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-4.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-5.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-  </div>
-  <div class="row" id="row2">
-    <figure class="shot ph"><!-- foto: img/trabalho-6.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-7.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-8.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-9.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg></figure>
-    <figure class="shot ph"><!-- foto: img/trabalho-10.jpg --><svg class="big" aria-hidden="true"><use href="icons.svg#i-scissors"/></svg></figure>
-  </div>
+  <div class="row" id="row1"><figure class="shot"><img src="img/trabalho-1.webp" alt="Cabelo castanho com mechas douradas, liso e brilhante, sendo penteado" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-2.webp" alt="Cabelo preto bem longo e liso, com brilho, até a cintura" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-3.webp" alt="Cabelo liso com pontas douradas, alinhado e brilhante" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-4.webp" alt="Cabelo escuro liso e brilhante, com reflexo azulado, sendo penteado" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot"><img src="img/trabalho-5.webp" alt="Cabelo castanho longo, liso e brilhante, sendo penteado" width="480" height="640" loading="lazy" decoding="async"></figure></div>
+  <div class="row" id="row2"><figure class="shot" aria-hidden="true"><img src="img/trabalho-3.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-4.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-5.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-1.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure><figure class="shot" aria-hidden="true"><img src="img/trabalho-2.webp" alt="" width="480" height="640" loading="lazy" decoding="async"></figure></div>
 </section>
 
 <section class="section steps-sec" id="como-agendar">
@@ -91,7 +82,7 @@
 <section class="section about" id="sobre">
   <div class="wrap about-grid">
     <!-- foto: img/sobre.jpg (profissional ou espaço) -->
-    <figure class="portrait ph" role="img" aria-label="Espaço reservado para foto do espaço ou da profissional"><svg class="big" aria-hidden="true"><use href="icons.svg#i-image"/></svg><span class="ph-note">Foto do espaço aqui</span></figure>
+    <figure class="portrait"><img src="img/sobre.webp" alt="Cabelo castanho liso e brilhante na cadeira do salão" width="720" height="960" loading="lazy" decoding="async"></figure>
     <div class="about-text">
       <h2 data-up>Studio Liso Encantador, em <i>Samambaia Norte</i>.</h2>
       <p data-up>Studio Liso Encantador aparece no Google como salão de beleza, com nota 5,0 em 42 avaliações. Fica em QN 401, casa 15 – Samambaia Norte, Brasília – DF, 72319-030.</p>
