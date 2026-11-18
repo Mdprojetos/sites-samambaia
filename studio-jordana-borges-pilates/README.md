@@ -8,6 +8,7 @@
 - **Telefone/WhatsApp:** (61) 98469-7489 — número de celular do perfil (presume-se WhatsApp)
 - **Nota no Google:** 5,0 (4 avaliações)
 - **Instagram:** @jordanapilates
+- **Modalidades (faixa da fachada):** Pilates Aparelhos, Pilates Solo, Ginástica Localizada, Treinamento Funcional e GAP
 
 ## Horários (perfil do Google)
 
@@ -36,7 +37,7 @@ Fotos enviadas por Marcus Dantas em 18 de novembro de 2026 (formato WebP, já re
 
 Nas fotos com alunas, os rostos quase não aparecem. Mesmo assim, confirme com o estúdio que elas autorizam o uso. A fachada não mostra carros nem pessoas.
 
-A faixa da fachada lista as modalidades: Pilates Aparelhos, Pilates Solo, Ginástica Localizada, Treinamento Funcional e GAP. Ainda não foram colocadas no site.
+A faixa da fachada lista as modalidades: Pilates Aparelhos, Pilates Solo, Ginástica Localizada, Treinamento Funcional e GAP. Foram colocadas no site em 18/11/2026: na abertura, na seção "Sobre" e nas dúvidas frequentes.
 
 Na publicação da Vercel, as imagens são carregadas desta pasta do GitHub pelo jsDelivr (cdn.jsdelivr.net), liberado no `vercel.json`. A cópia no GitHub usa os caminhos locais `img/...`.
 
