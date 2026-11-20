@@ -1,0 +1,13 @@
+Fotos de Studio Adriana Oliveira (prévia de site)
+
+Nesta prévia todas as imagens são ilustrações neutras (gradientes e ícones).
+Nenhuma foto foi copiada do Google, do Instagram ou de outra rede.
+As fotos reais devem ser enviadas pelo próprio negócio, com autorização de uso.
+
+Arquivos que entram nesta pasta (JPG, de preferência até 300 KB cada):
+- img/hero.jpg ............ foto principal do topo (vertical, 4:5)
+- img/sobre.jpg ........... foto do espaço ou da equipe (vertical, 3:4)
+- img/trabalho-1.jpg a img/trabalho-10.jpg ... galeria (vertical, 3:4)
+
+No index.html, cada espaço tem um comentário indicando qual arquivo entra ali.
+Basta trocar o <div class="ph" ...> por <img src="img/NOME.jpg" alt="descrição">.
