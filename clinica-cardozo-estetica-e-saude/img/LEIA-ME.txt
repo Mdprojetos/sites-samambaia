@@ -1,0 +1,14 @@
+Fotos do negócio
+
+Esta prévia NÃO usa nenhuma foto copiada do Google, do Instagram ou de outra rede.
+Os espaços de foto mostram ilustrações neutras. Quando o negócio enviar as fotos dele,
+salve nesta pasta com estes nomes (JPG, cerca de 1600 px no lado maior):
+
+  img/hero.jpg         foto principal do topo (em pé, 4:5)
+  img/sobre.jpg        profissional, recepção ou fachada (em pé, 3:4)
+  img/trabalho-1.jpg   trabalho ou ambiente (quadrada)
+  img/trabalho-2.jpg   trabalho ou ambiente (quadrada)
+  img/trabalho-3.jpg   trabalho ou ambiente (quadrada)
+
+Em site.js, cada espaço tem um comentário <!-- FOTO: img/... --> mostrando onde
+trocar a ilustração (função ph) por <img src='img/...jpg' alt='descrição da foto'>.
