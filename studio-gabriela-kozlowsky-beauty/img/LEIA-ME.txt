@@ -1,0 +1,16 @@
+Fotos de Studio Gabriela Kozlowsky Beauty
+================================
+
+As imagens do site são ilustrativas (gradientes e ícones). As fotos reais devem ser
+enviadas pelo próprio negócio. Não use fotos do Google, do Instagram ou de outras redes
+sem autorização do negócio.
+
+Arquivos que entram nesta pasta (o comentário <!-- FOTO: ... --> no index.html mostra o lugar de cada um):
+
+  img/hero.jpg         foto principal (topo do site), vertical 4:5
+  img/sobre.jpg        retrato da profissional ou do espaço, vertical 3:4
+  img/espaco-1.jpg     ambiente (quadrada)
+  img/espaco-2.jpg     ambiente (quadrada)
+  img/trabalho-1.jpg … img/trabalho-10.jpg   trabalhos para a galeria, vertical 3:4
+
+Depois de colocar as fotos, troque cada <div class="ph" ...> pelo <img src="img/..." alt="descrição">.
